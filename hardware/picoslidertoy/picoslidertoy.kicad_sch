@@ -130,8 +130,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -13.97 27.94 0)
+			(property "Reference" "U1"
+				(at 0 31.75 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -139,14 +139,14 @@
 				)
 			)
 			(property "Value" "Pico"
-				(at 0 19.05 0)
+				(at 0 29.21 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH"
+			(property "Footprint" "todbot_RPI_Pico:RPi_Pico_SMD"
 				(at 0 0 90)
 				(effects
 					(font
@@ -719,7 +719,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin bidirectional line
 					(at 17.78 13.97 180)
 					(length 2.54)
 					(name "3V3"
@@ -1055,6 +1055,88 @@
 				)
 			)
 		)
+		(symbol "MountingHole_1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_1_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "SparkFun-Switch:Capacitive Button"
 			(pin_names
 				(offset 0) hide)
@@ -1151,23 +1233,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 8.89 0)
+			(property "Reference" "DISP1"
+				(at 5.08 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "HS96L03W2C03"
-				(at 0 -8.89 0)
+				(at 5.08 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:OLED-TH_L27.8-W27.2-P2.54_C9900033791"
+			(property "Footprint" "todbot_stuff:OLED-TH_under_L27.8-W27.2-P2.54_C9900033791"
 				(at 0 -11.43 0)
 				(effects
 					(font
@@ -1226,7 +1310,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "HS96L03W2C03_1_1"
+				(pin power_in line
 					(at -6.35 3.81 0)
 					(length 2.54)
 					(name "GND"
@@ -1244,7 +1330,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -6.35 1.27 0)
 					(length 2.54)
 					(name "VCC"
@@ -1262,7 +1348,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -1.27 0)
 					(length 2.54)
 					(name "SCL"
@@ -1280,7 +1366,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -6.35 -3.81 0)
 					(length 2.54)
 					(name "SDA"
@@ -1857,6 +1943,38 @@
 		(color 0 0 0 0)
 		(uuid "caad239a-9030-4ee8-9fd8-e66d1f426753")
 	)
+	(no_connect
+		(at 74.93 58.42)
+		(uuid "00cb79cb-ec5b-4145-af21-40adb1a4873e")
+	)
+	(no_connect
+		(at 74.93 53.34)
+		(uuid "1bfef771-33dd-45c8-8f1d-10afe425612b")
+	)
+	(no_connect
+		(at 59.69 99.06)
+		(uuid "243014a6-732a-488a-9bc2-6cc38abb9c96")
+	)
+	(no_connect
+		(at 54.61 99.06)
+		(uuid "4b71f349-75e1-409c-9b4c-f46b936f1e3d")
+	)
+	(no_connect
+		(at 57.15 99.06)
+		(uuid "90ddd488-78df-4598-b368-86ba13785c1d")
+	)
+	(no_connect
+		(at 74.93 71.12)
+		(uuid "918a8230-1980-4b8b-9f82-44f79f68d37c")
+	)
+	(no_connect
+		(at 74.93 45.72)
+		(uuid "c8775c73-d9d7-4632-ac56-c6b7df743d6a")
+	)
+	(no_connect
+		(at 74.93 48.26)
+		(uuid "e0cb4e77-b636-40e9-b0c0-638f1fa7ca4c")
+	)
 	(wire
 		(pts
 			(xy 74.93 93.98) (xy 88.9 93.98)
@@ -1869,7 +1987,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 140.97) (xy 149.86 140.97)
+			(xy 224.79 101.6) (xy 210.82 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1909,7 +2027,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 21.59) (xy 151.13 21.59)
+			(xy 154.94 31.75) (xy 140.97 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1919,7 +2037,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 105.41) (xy 208.28 105.41)
+			(xy 224.79 132.08) (xy 210.82 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1946,6 +2064,16 @@
 			(type default)
 		)
 		(uuid "2f02b5ae-3364-441d-bbc4-f01ad1fb6173")
+	)
+	(wire
+		(pts
+			(xy 132.08 50.8) (xy 133.35 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33f36330-e528-4d9d-adff-9da6233b5b8e")
 	)
 	(wire
 		(pts
@@ -1999,6 +2127,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 38.1) (xy 133.35 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4503a39a-0dcc-413b-b545-349d8ada5e6a")
+	)
+	(wire
+		(pts
 			(xy 26.67 53.34) (xy 39.37 53.34)
 		)
 		(stroke
@@ -2009,7 +2147,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 110.49) (xy 208.28 110.49)
+			(xy 224.79 137.16) (xy 210.82 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2019,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 55.88) (xy 151.13 55.88)
+			(xy 154.94 66.04) (xy 140.97 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2029,7 +2167,27 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 34.29) (xy 151.13 34.29)
+			(xy 88.9 118.11) (xy 90.17 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fea6316-4a94-490f-b3cd-6d0019e3cb3f")
+	)
+	(wire
+		(pts
+			(xy 132.08 66.04) (xy 133.35 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51aaafad-198d-4db5-b535-52303bd3baec")
+	)
+	(wire
+		(pts
+			(xy 154.94 44.45) (xy 140.97 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2049,7 +2207,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 106.68) (xy 163.83 106.68)
+			(xy 210.82 67.31) (xy 224.79 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2089,7 +2247,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 114.3) (xy 149.86 114.3)
+			(xy 224.79 74.93) (xy 210.82 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2109,7 +2267,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 128.27) (xy 208.28 128.27)
+			(xy 224.79 154.94) (xy 210.82 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2149,7 +2307,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 40.64) (xy 165.1 40.64)
+			(xy 140.97 50.8) (xy 154.94 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2159,7 +2317,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 148.59) (xy 149.86 148.59)
+			(xy 224.79 109.22) (xy 210.82 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2169,7 +2327,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 87.63) (xy 149.86 87.63)
+			(xy 224.79 48.26) (xy 210.82 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2179,7 +2337,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 95.25) (xy 149.86 95.25)
+			(xy 224.79 55.88) (xy 210.82 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2189,7 +2347,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 27.94) (xy 151.13 27.94)
+			(xy 154.94 38.1) (xy 140.97 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2199,7 +2357,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 123.19) (xy 208.28 123.19)
+			(xy 224.79 149.86) (xy 210.82 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2229,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 62.23) (xy 151.13 62.23)
+			(xy 154.94 72.39) (xy 140.97 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2249,6 +2407,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 44.45) (xy 133.35 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd8b5894-606b-464d-91c9-a83ce3b1defb")
+	)
+	(wire
+		(pts
 			(xy 76.2 55.88) (xy 74.93 55.88)
 		)
 		(stroke
@@ -2259,7 +2427,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 80.01) (xy 163.83 80.01)
+			(xy 210.82 40.64) (xy 224.79 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2279,7 +2447,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 118.11) (xy 208.28 118.11)
+			(xy 224.79 144.78) (xy 210.82 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2289,7 +2457,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 68.58) (xy 165.1 68.58)
+			(xy 140.97 78.74) (xy 154.94 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2309,7 +2477,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 100.33) (xy 208.28 100.33)
+			(xy 224.79 127) (xy 210.82 127)
 		)
 		(stroke
 			(width 0)
@@ -2339,7 +2507,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 121.92) (xy 149.86 121.92)
+			(xy 132.08 59.69) (xy 133.35 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7e10208-0f5d-4b30-965d-3f8745ea854b")
+	)
+	(wire
+		(pts
+			(xy 224.79 82.55) (xy 210.82 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2349,7 +2527,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 49.53) (xy 151.13 49.53)
+			(xy 154.94 59.69) (xy 140.97 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2369,7 +2547,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 133.35) (xy 163.83 133.35)
+			(xy 210.82 93.98) (xy 224.79 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2409,6 +2587,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 31.75) (xy 133.35 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f53eb8a6-a59e-45f0-9488-8592d2618c38")
+	)
+	(wire
+		(pts
 			(xy 87.63 113.03) (xy 90.17 113.03)
 		)
 		(stroke
@@ -2438,7 +2626,7 @@
 		(uuid "fba46984-ab7d-440e-aab3-70f9cc7312af")
 	)
 	(label "FADER2A"
-		(at 152.4 106.68 0)
+		(at 213.36 67.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2504,7 +2692,7 @@
 		(uuid "20793780-a9a5-4ce1-9f3f-d7d6f54f230a")
 	)
 	(label "TPAD4"
-		(at 154.94 40.64 0)
+		(at 144.78 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2515,7 +2703,7 @@
 		(uuid "25e8884f-eb0f-44e2-97be-492344a5a6f4")
 	)
 	(label "ROT2C"
-		(at 213.36 128.27 0)
+		(at 215.9 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2548,7 +2736,7 @@
 		(uuid "40865e0b-2cfe-4272-bf87-7b846541abb2")
 	)
 	(label "FADER3C"
-		(at 152.4 148.59 0)
+		(at 213.36 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2581,7 +2769,7 @@
 		(uuid "53cae01d-cddc-4152-9eea-5946eb7ddd4e")
 	)
 	(label "TPAD1"
-		(at 154.94 21.59 0)
+		(at 144.78 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2592,7 +2780,7 @@
 		(uuid "5530c665-5e68-4dd7-8944-c78c035f1b2f")
 	)
 	(label "FADER1A"
-		(at 152.4 80.01 0)
+		(at 213.36 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2614,7 +2802,7 @@
 		(uuid "672e77f0-c5cb-4064-8a58-2f9177220fa4")
 	)
 	(label "TPAD8"
-		(at 154.94 68.58 0)
+		(at 144.78 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2658,7 +2846,7 @@
 		(uuid "7887b9f8-e8f5-4207-ac12-71532cbb38db")
 	)
 	(label "FADER3A"
-		(at 152.4 133.35 0)
+		(at 213.36 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2669,7 +2857,7 @@
 		(uuid "78a2ad58-1cca-4d88-987b-5805b55b468b")
 	)
 	(label "FADER1B"
-		(at 152.4 87.63 0)
+		(at 213.36 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2735,7 +2923,7 @@
 		(uuid "9f3038f5-8f2b-4b5a-a95a-b9d4241ff748")
 	)
 	(label "ROT2A"
-		(at 213.36 118.11 0)
+		(at 215.9 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2746,7 +2934,7 @@
 		(uuid "a2d74ef1-f576-441f-b538-66fd84aff809")
 	)
 	(label "TPAD3"
-		(at 154.94 34.29 0)
+		(at 144.78 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2790,7 +2978,7 @@
 		(uuid "acc3042a-350a-4dde-b4a3-00fd1bad7cf8")
 	)
 	(label "TPAD7"
-		(at 154.94 62.23 0)
+		(at 144.78 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2801,7 +2989,7 @@
 		(uuid "b02f9d45-a239-488e-9937-3f0b6297b53f")
 	)
 	(label "ROT1A"
-		(at 213.36 100.33 0)
+		(at 215.9 127 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2812,7 +3000,7 @@
 		(uuid "b19bc9d9-c2f8-4c2d-aa6e-990db2aea5f3")
 	)
 	(label "TPAD6"
-		(at 154.94 55.88 0)
+		(at 144.78 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2823,7 +3011,7 @@
 		(uuid "bdbc6c9d-fe29-4e2e-812c-4ed689c26f36")
 	)
 	(label "FADER2C"
-		(at 152.4 121.92 0)
+		(at 213.36 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2856,7 +3044,7 @@
 		(uuid "c50ca3c3-7d69-4464-aa6f-805770ae5cea")
 	)
 	(label "ROT2B"
-		(at 213.36 123.19 0)
+		(at 215.9 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2867,7 +3055,7 @@
 		(uuid "c98594ac-be74-405f-a16f-f7517680218c")
 	)
 	(label "TPAD2"
-		(at 154.94 27.94 0)
+		(at 144.78 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2889,7 +3077,7 @@
 		(uuid "dddf8b12-725a-461e-adb9-fe4c34a9513d")
 	)
 	(label "FADER1C"
-		(at 152.4 95.25 0)
+		(at 213.36 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2900,7 +3088,7 @@
 		(uuid "df3220b4-1346-4e2b-8176-1ae4ab5c0b83")
 	)
 	(label "ROT1C"
-		(at 213.36 110.49 0)
+		(at 215.9 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2911,7 +3099,7 @@
 		(uuid "e8bc6522-97a9-488d-97b9-92da0249a44d")
 	)
 	(label "FADER2B"
-		(at 152.4 114.3 0)
+		(at 213.36 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2922,7 +3110,7 @@
 		(uuid "ebb264ca-812f-4c69-be3f-2c703f7b5b30")
 	)
 	(label "ROT1B"
-		(at 213.36 105.41 0)
+		(at 215.9 132.08 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2944,7 +3132,7 @@
 		(uuid "f4ead47c-2035-4371-ad3f-59cf87b1bb9b")
 	)
 	(label "TPAD5"
-		(at 154.94 49.53 0)
+		(at 144.78 59.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2955,7 +3143,7 @@
 		(uuid "f874a4a2-7106-47e0-b4d2-c47d28d8fd6a")
 	)
 	(label "FADER3B"
-		(at 152.4 140.97 0)
+		(at 213.36 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2989,7 +3177,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 49.53 90)
+		(at 137.16 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2997,7 +3185,7 @@
 		(dnp no)
 		(uuid "029a04d4-5246-4071-8119-b57f2c90cb14")
 		(property "Reference" "R20"
-			(at 145.796 47.244 90)
+			(at 135.636 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,7 +3193,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 51.562 90)
+			(at 138.43 61.722 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,7 +3201,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 51.308 90)
+			(at 137.16 61.468 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +3210,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 49.53 0)
+			(at 137.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,7 +3219,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 49.53 0)
+			(at 137.16 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3046,7 +3234,7 @@
 			(uuid "d044ecd9-5935-4095-bfb8-ad83bfe7c885")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R20")
 					(unit 1)
@@ -3056,7 +3244,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 140.97 90)
+		(at 207.01 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3064,7 +3252,7 @@
 		(dnp no)
 		(uuid "03b354f9-e0aa-41e2-b558-e58477310d68")
 		(property "Reference" "R14"
-			(at 144.526 138.684 90)
+			(at 205.486 99.314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3072,7 +3260,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 143.002 90)
+			(at 208.28 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +3268,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 142.748 90)
+			(at 207.01 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +3277,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 140.97 0)
+			(at 207.01 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3286,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 140.97 0)
+			(at 207.01 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,7 +3301,7 @@
 			(uuid "3eb3b300-906e-4bc4-82aa-c636efff7b9c")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R14")
 					(unit 1)
@@ -3123,7 +3311,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 27.94 270)
+		(at 154.94 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3132,7 +3320,7 @@
 		(fields_autoplaced yes)
 		(uuid "03f63d85-ea4c-41bf-b401-d9111e4828e8")
 		(property "Reference" "SW2"
-			(at 170.18 26.6699 90)
+			(at 160.02 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3141,7 +3329,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 29.2099 90)
+			(at 160.02 39.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3150,7 +3338,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 27.94 0)
+			(at 147.32 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,7 +3347,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 27.94 0)
+			(at 144.78 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3168,7 +3356,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 27.94 0)
+			(at 154.94 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3368,7 @@
 			(uuid "0472a15a-a5fb-4e1f-b964-0a6f3fbe44fd")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW2")
 					(unit 1)
@@ -3190,7 +3378,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 118.11 270)
+		(at 203.2 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3199,7 +3387,7 @@
 		(fields_autoplaced yes)
 		(uuid "043f50be-7360-43bf-be11-fc6f7f574d98")
 		(property "Reference" "#PWR08"
-			(at 194.31 118.11 0)
+			(at 196.85 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,7 +3396,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 118.1099 90)
+			(at 199.39 144.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +3405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 118.11 0)
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3226,7 +3414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 118.11 0)
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3235,7 +3423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 118.11 0)
+			(at 203.2 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3247,7 +3435,7 @@
 			(uuid "a76fc129-f960-41f1-b85f-0063e1ea7dfa")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR08")
 					(unit 1)
@@ -3314,7 +3502,7 @@
 			(uuid "4154829b-4ade-4d53-99cc-d1e79f42c87a")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR031")
 					(unit 1)
@@ -3324,7 +3512,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 55.88 270)
+		(at 154.94 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3333,7 +3521,7 @@
 		(fields_autoplaced yes)
 		(uuid "07518f5a-3e8a-47c7-9395-61c74a87010e")
 		(property "Reference" "SW6"
-			(at 170.18 54.6099 90)
+			(at 160.02 64.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3530,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 57.1499 90)
+			(at 160.02 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3539,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 55.88 0)
+			(at 147.32 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3548,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 55.88 0)
+			(at 144.78 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3369,7 +3557,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 55.88 0)
+			(at 154.94 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,7 +3569,7 @@
 			(uuid "2549a371-8dd8-4f27-a8bd-f2bf99286035")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW6")
 					(unit 1)
@@ -3391,7 +3579,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 27.94 90)
+		(at 137.16 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3399,7 +3587,7 @@
 		(dnp no)
 		(uuid "079cbf6e-a145-4a3f-92f9-0993d05bd23c")
 		(property "Reference" "R17"
-			(at 145.796 25.654 90)
+			(at 135.636 35.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3407,7 +3595,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 29.972 90)
+			(at 138.43 40.132 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3415,7 +3603,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 29.718 90)
+			(at 137.16 39.878 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,7 +3612,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 27.94 0)
+			(at 137.16 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,7 +3621,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 27.94 0)
+			(at 137.16 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +3636,7 @@
 			(uuid "527857d9-b54d-4d1f-94f4-1e17edb68fcd")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R17")
 					(unit 1)
@@ -3458,7 +3646,7 @@
 	)
 	(symbol
 		(lib_id "todbot_eagle2023:TouchSlider3")
-		(at 173.99 114.3 0)
+		(at 234.95 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3467,7 +3655,7 @@
 		(fields_autoplaced yes)
 		(uuid "091b889f-a550-4ae8-b73b-e149523f7aa3")
 		(property "Reference" "FADER2"
-			(at 177.8 113.03 0)
+			(at 238.76 73.66 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -3476,7 +3664,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 168.91 127 0)
+			(at 229.87 87.63 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -3486,7 +3674,7 @@
 			)
 		)
 		(property "Footprint" "todbot_eagle2023:TOUCHSLIDER3_8x40B"
-			(at 173.99 114.3 0)
+			(at 234.95 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3495,7 +3683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 114.3 0)
+			(at 234.95 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3504,7 +3692,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 114.3 0)
+			(at 234.95 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,7 +3710,7 @@
 			(uuid "b05e8daf-7e04-404f-8c7f-a0aa0de4925b")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "FADER2")
 					(unit 1)
@@ -3588,7 +3776,7 @@
 			(uuid "3c1bba05-1218-465b-929f-01a1e0af7941")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR034")
 					(unit 1)
@@ -3597,32 +3785,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 204.47 110.49 90)
+		(lib_name "MountingHole_1")
+		(lib_id "Mechanical:MountingHole")
+		(at 156.21 181.61 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "0b8bde89-fdfd-46e0-a128-b7e23e8d297c")
-		(property "Reference" "R3"
-			(at 202.946 108.204 90)
+		(fields_autoplaced yes)
+		(uuid "0a684cde-56f5-4dc9-97e7-51c4eabe6316")
+		(property "Reference" "H7"
+			(at 158.75 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 205.74 112.522 90)
+		(property "Value" "MountingHole"
+			(at 158.75 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 112.268 90)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 156.21 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3631,7 +3823,68 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 110.49 0)
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b8bde89-fdfd-46e0-a128-b7e23e8d297c")
+		(property "Reference" "R3"
+			(at 205.486 134.874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 208.28 139.192 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 207.01 138.938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3640,7 +3893,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 110.49 0)
+			(at 207.01 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,7 +3908,7 @@
 			(uuid "8ef2282e-f95f-40ef-b58f-ed8ae31c0e7e")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R3")
 					(unit 1)
@@ -3665,7 +3918,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 62.23 270)
+		(at 154.94 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3674,7 +3927,7 @@
 		(fields_autoplaced yes)
 		(uuid "1803f49b-632c-45ce-8326-a0ce4f9adc87")
 		(property "Reference" "SW7"
-			(at 170.18 60.9599 90)
+			(at 160.02 71.1199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3936,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 63.4999 90)
+			(at 160.02 73.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3692,7 +3945,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 62.23 0)
+			(at 147.32 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3701,7 +3954,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 62.23 0)
+			(at 144.78 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +3963,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 62.23 0)
+			(at 154.94 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3722,7 +3975,7 @@
 			(uuid "14f59656-af61-4866-8034-c446a1116f0a")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW7")
 					(unit 1)
@@ -3732,7 +3985,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 121.92 90)
+		(at 207.01 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3740,7 +3993,7 @@
 		(dnp no)
 		(uuid "1ab51bda-65fc-43b8-9ed1-d8299d672381")
 		(property "Reference" "R12"
-			(at 144.526 119.634 90)
+			(at 205.486 80.264 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3748,7 +4001,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 123.952 90)
+			(at 208.28 84.582 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3756,7 +4009,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 123.698 90)
+			(at 207.01 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3765,7 +4018,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 121.92 0)
+			(at 207.01 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,7 +4027,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 121.92 0)
+			(at 207.01 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3789,7 +4042,7 @@
 			(uuid "48b796b4-5fed-46cf-9622-9a4604329fc0")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R12")
 					(unit 1)
@@ -3799,7 +4052,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 95.25 90)
+		(at 207.01 55.88 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3807,7 +4060,7 @@
 		(dnp no)
 		(uuid "1c6da6fc-05ef-4491-8211-919f867ce53a")
 		(property "Reference" "R9"
-			(at 144.526 92.964 90)
+			(at 205.486 53.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,7 +4068,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 97.282 90)
+			(at 208.28 57.912 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +4076,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 97.028 90)
+			(at 207.01 57.658 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +4085,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 95.25 0)
+			(at 207.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3841,7 +4094,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 95.25 0)
+			(at 207.01 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +4109,7 @@
 			(uuid "341d9df0-a293-4a46-b73e-0cc3e24f9617")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R9")
 					(unit 1)
@@ -3866,7 +4119,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 87.63 270)
+		(at 203.2 48.26 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3875,7 +4128,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c6fcc74-d474-4772-818f-04bc6aec86ee")
 		(property "Reference" "#PWR012"
-			(at 135.89 87.63 0)
+			(at 196.85 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,7 +4137,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 87.6299 90)
+			(at 199.39 48.2599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +4146,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 87.63 0)
+			(at 203.2 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +4155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 87.63 0)
+			(at 203.2 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,7 +4164,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 87.63 0)
+			(at 203.2 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3923,7 +4176,7 @@
 			(uuid "fac62ae1-6c83-44f4-89f7-c03d318a94d3")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR012")
 					(unit 1)
@@ -3989,7 +4242,7 @@
 			(uuid "e1b4a579-1ce0-4f08-b7c5-27e109818fd3")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR033")
 					(unit 1)
@@ -3999,7 +4252,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 148.59 90)
+		(at 207.01 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4007,7 +4260,7 @@
 		(dnp no)
 		(uuid "1f97dba2-c6b2-4d51-8153-13602028ab52")
 		(property "Reference" "R15"
-			(at 144.526 146.304 90)
+			(at 205.486 106.934 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4015,7 +4268,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 150.622 90)
+			(at 208.28 111.252 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +4276,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 150.368 90)
+			(at 207.01 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4032,7 +4285,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 148.59 0)
+			(at 207.01 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4041,7 +4294,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 148.59 0)
+			(at 207.01 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,7 +4309,7 @@
 			(uuid "cb8f7e72-af72-45aa-8f59-6ed8b1e1a139")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R15")
 					(unit 1)
@@ -4065,8 +4318,73 @@
 		)
 	)
 	(symbol
+		(lib_name "MountingHole_1")
+		(lib_id "Mechanical:MountingHole")
+		(at 156.21 171.45 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20502072-9e2f-4566-9326-3848440c0076")
+		(property "Reference" "H5"
+			(at 158.75 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 158.75 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 156.21 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 143.51 55.88 270)
+		(at 132.08 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4075,7 +4393,7 @@
 		(fields_autoplaced yes)
 		(uuid "20f4965a-d00c-4fe0-95ef-d750c2da0788")
 		(property "Reference" "#PWR027"
-			(at 137.16 55.88 0)
+			(at 125.73 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4084,7 +4402,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 55.8799 90)
+			(at 128.27 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4093,7 +4411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 55.88 0)
+			(at 132.08 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4102,7 +4420,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 55.88 0)
+			(at 132.08 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4111,7 +4429,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 55.88 0)
+			(at 132.08 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4123,7 +4441,7 @@
 			(uuid "61e5bae7-5950-46c7-9f51-f54dcd2deb1d")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR027")
 					(unit 1)
@@ -4133,7 +4451,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 49.53 270)
+		(at 132.08 59.69 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4142,7 +4460,7 @@
 		(fields_autoplaced yes)
 		(uuid "2462062f-02bb-41dc-bb22-40e1be17ec49")
 		(property "Reference" "#PWR03"
-			(at 137.16 49.53 0)
+			(at 125.73 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4151,7 +4469,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 49.5299 90)
+			(at 128.27 59.6899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4160,7 +4478,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 49.53 0)
+			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4169,7 +4487,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 49.53 0)
+			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,7 +4496,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 49.53 0)
+			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4190,7 +4508,7 @@
 			(uuid "cf0b6cac-e414-4eb8-8268-459c9217ee11")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR03")
 					(unit 1)
@@ -4200,7 +4518,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 140.97 270)
+		(at 203.2 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4209,7 +4527,7 @@
 		(fields_autoplaced yes)
 		(uuid "2583eccf-2e9b-4954-8036-6a396526aeb9")
 		(property "Reference" "#PWR018"
-			(at 135.89 140.97 0)
+			(at 196.85 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4536,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 140.9699 90)
+			(at 199.39 101.5999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 140.97 0)
+			(at 203.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,7 +4554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 140.97 0)
+			(at 203.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4245,7 +4563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 140.97 0)
+			(at 203.2 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,7 +4575,7 @@
 			(uuid "e69b3f31-7327-451b-ae20-fa41a0a23778")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR018")
 					(unit 1)
@@ -4267,7 +4585,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 62.23 270)
+		(at 133.35 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4276,7 +4594,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c1f020f-5ab9-4526-88de-2469f39a5a59")
 		(property "Reference" "#PWR028"
-			(at 137.16 62.23 0)
+			(at 127 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4285,7 +4603,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 62.2299 90)
+			(at 129.54 72.3899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,7 +4612,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 62.23 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4303,7 +4621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 62.23 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,7 +4630,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 62.23 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4324,7 +4642,7 @@
 			(uuid "ffd6383f-1b76-4996-8ddf-94c3626f94c8")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR028")
 					(unit 1)
@@ -4333,32 +4651,36 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 147.32 34.29 90)
+		(lib_name "MountingHole_1")
+		(lib_id "Mechanical:MountingHole")
+		(at 156.21 176.53 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2d2a8da1-0a99-49b9-98cc-3194ec48e090")
-		(property "Reference" "R18"
-			(at 145.796 32.004 90)
+		(fields_autoplaced yes)
+		(uuid "2cc2f81f-25f4-43d4-bc0b-4011bc21d14a")
+		(property "Reference" "H6"
+			(at 158.75 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1M"
-			(at 148.59 36.322 90)
+		(property "Value" "MountingHole"
+			(at 158.75 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 36.068 90)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 156.21 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +4689,68 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 34.29 0)
+			(at 156.21 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 156.21 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d2a8da1-0a99-49b9-98cc-3194ec48e090")
+		(property "Reference" "R18"
+			(at 135.636 42.164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 138.43 46.482 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 137.16 46.228 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4759,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 34.29 0)
+			(at 137.16 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4391,7 +4774,7 @@
 			(uuid "46be7fd8-fcf2-4f3f-a926-5dc0f4349a1e")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R18")
 					(unit 1)
@@ -4476,7 +4859,7 @@
 			(uuid "e07ef00c-95e1-4205-97e1-c609d70a79fc")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "DISP1")
 					(unit 1)
@@ -4486,7 +4869,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 40.64 270)
+		(at 154.94 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4495,7 +4878,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c04edf2-a031-4d75-9979-464fd462ae5b")
 		(property "Reference" "SW4"
-			(at 170.18 39.3699 90)
+			(at 160.02 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4504,7 +4887,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 41.9099 90)
+			(at 160.02 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +4896,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 40.64 0)
+			(at 147.32 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,7 +4905,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 40.64 0)
+			(at 144.78 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4914,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 40.64 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4926,7 @@
 			(uuid "f66213fe-0311-4473-88a1-fe6813c80f4f")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW4")
 					(unit 1)
@@ -4553,7 +4936,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 105.41 90)
+		(at 207.01 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4561,7 +4944,7 @@
 		(dnp no)
 		(uuid "3e68202a-9fc6-41bb-872c-14e1972b80ba")
 		(property "Reference" "R2"
-			(at 202.946 103.124 90)
+			(at 205.486 129.794 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4569,7 +4952,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 205.74 107.442 90)
+			(at 208.28 134.112 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4577,7 +4960,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 107.188 90)
+			(at 207.01 133.858 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4586,7 +4969,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 105.41 0)
+			(at 207.01 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4595,7 +4978,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 105.41 0)
+			(at 207.01 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4610,7 +4993,7 @@
 			(uuid "53693135-b20b-4463-a0e3-789a30ee82fd")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R2")
 					(unit 1)
@@ -4620,7 +5003,7 @@
 	)
 	(symbol
 		(lib_id "todbot_eagle2023:TouchSlider3")
-		(at 173.99 87.63 0)
+		(at 234.95 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4629,7 +5012,7 @@
 		(fields_autoplaced yes)
 		(uuid "49b0ceb8-3ddc-4007-892a-2a5188886d24")
 		(property "Reference" "FADER1"
-			(at 177.8 86.36 0)
+			(at 238.76 46.99 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -4638,7 +5021,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 168.91 100.33 0)
+			(at 229.87 60.96 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -4648,7 +5031,7 @@
 			)
 		)
 		(property "Footprint" "todbot_eagle2023:TOUCHSLIDER3_8x40B"
-			(at 173.99 87.63 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +5040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 87.63 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4666,7 +5049,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 87.63 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +5067,7 @@
 			(uuid "f2b5e2f2-3b74-4f30-a9be-6a8bf36825df")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "FADER1")
 					(unit 1)
@@ -4694,7 +5077,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 114.3 90)
+		(at 207.01 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4702,7 +5085,7 @@
 		(dnp no)
 		(uuid "4a023144-a91d-4bd5-93a0-3e9a60f6680b")
 		(property "Reference" "R11"
-			(at 144.526 112.014 90)
+			(at 205.486 72.644 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +5093,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 116.332 90)
+			(at 208.28 76.962 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,7 +5101,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 116.078 90)
+			(at 207.01 76.708 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4727,7 +5110,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 114.3 0)
+			(at 207.01 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +5119,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 114.3 0)
+			(at 207.01 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +5134,7 @@
 			(uuid "35f7e252-965a-474a-861a-55b2a81580b1")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R11")
 					(unit 1)
@@ -4817,7 +5200,7 @@
 			(uuid "69740c67-509f-46b4-896d-a2b281c70340")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR035")
 					(unit 1)
@@ -4827,7 +5210,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 144.78 176.53 0)
+		(at 132.08 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4836,7 +5219,7 @@
 		(fields_autoplaced yes)
 		(uuid "50b75a8e-13ef-482e-bc44-12cc13d939ea")
 		(property "Reference" "H2"
-			(at 147.32 175.2599 0)
+			(at 134.62 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +5228,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 147.32 177.7999 0)
+			(at 134.62 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4854,7 +5237,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
-			(at 144.78 176.53 0)
+			(at 132.08 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4863,7 +5246,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 176.53 0)
+			(at 132.08 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4872,7 +5255,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 144.78 176.53 0)
+			(at 132.08 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4881,7 +5264,7 @@
 			)
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "H2")
 					(unit 1)
@@ -4891,7 +5274,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 100.33 270)
+		(at 203.2 127 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4900,7 +5283,7 @@
 		(fields_autoplaced yes)
 		(uuid "5240d81a-616f-4b0d-9a56-abdf6bd4f113")
 		(property "Reference" "#PWR05"
-			(at 194.31 100.33 0)
+			(at 196.85 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4909,7 +5292,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 100.3299 90)
+			(at 199.39 126.9999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +5301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 100.33 0)
+			(at 203.2 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,7 +5310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 100.33 0)
+			(at 203.2 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4936,7 +5319,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 100.33 0)
+			(at 203.2 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +5331,7 @@
 			(uuid "2d1cad8c-5251-41db-a4e7-4d8e51419a6a")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR05")
 					(unit 1)
@@ -4958,7 +5341,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 100.33 90)
+		(at 207.01 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4966,7 +5349,7 @@
 		(dnp no)
 		(uuid "546598a4-07f6-4366-82c8-2319d8ffff1d")
 		(property "Reference" "R1"
-			(at 202.946 98.044 90)
+			(at 205.486 124.714 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4974,7 +5357,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 205.74 102.362 90)
+			(at 208.28 129.032 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +5365,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 102.108 90)
+			(at 207.01 128.778 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +5374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 100.33 0)
+			(at 207.01 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +5383,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 100.33 0)
+			(at 207.01 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5015,7 +5398,7 @@
 			(uuid "ea2a04ce-1eaa-4bc2-ba59-5c7dd4d218f7")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R1")
 					(unit 1)
@@ -5025,7 +5408,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 114.3 270)
+		(at 203.2 74.93 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5034,7 +5417,7 @@
 		(fields_autoplaced yes)
 		(uuid "54863aba-af85-4c11-9d58-a88c13a4b7be")
 		(property "Reference" "#PWR015"
-			(at 135.89 114.3 0)
+			(at 196.85 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5043,7 +5426,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 114.2999 90)
+			(at 199.39 74.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5052,7 +5435,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 114.3 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5061,7 +5444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 114.3 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5070,7 +5453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 114.3 0)
+			(at 203.2 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5082,7 +5465,7 @@
 			(uuid "d7ddbf2d-87e1-4e27-b1a6-349aee3d6bd9")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR015")
 					(unit 1)
@@ -5092,7 +5475,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 95.25 270)
+		(at 203.2 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5101,7 +5484,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a1b735d-74c0-4f24-8b44-73e8a18b0085")
 		(property "Reference" "#PWR013"
-			(at 135.89 95.25 0)
+			(at 196.85 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5110,7 +5493,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 95.2499 90)
+			(at 199.39 55.8799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5119,7 +5502,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 95.25 0)
+			(at 203.2 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5128,7 +5511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 95.25 0)
+			(at 203.2 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5137,7 +5520,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 95.25 0)
+			(at 203.2 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5532,7 @@
 			(uuid "d316a9dd-f216-4396-bea3-8be57cb858df")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR013")
 					(unit 1)
@@ -5159,7 +5542,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 123.19 270)
+		(at 203.2 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5168,7 +5551,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a31bb97-5177-46cf-a48b-bb931709888e")
 		(property "Reference" "#PWR09"
-			(at 194.31 123.19 0)
+			(at 196.85 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5177,7 +5560,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 123.1899 90)
+			(at 199.39 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5186,7 +5569,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 123.19 0)
+			(at 203.2 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,7 +5578,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 123.19 0)
+			(at 203.2 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +5587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 123.19 0)
+			(at 203.2 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5216,7 +5599,7 @@
 			(uuid "8e82a230-9715-4917-bbdc-747df12784a2")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR09")
 					(unit 1)
@@ -5226,7 +5609,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 87.63 90)
+		(at 207.01 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5234,7 +5617,7 @@
 		(dnp no)
 		(uuid "60bf35ec-745e-4942-b7db-deeb8fbbcff7")
 		(property "Reference" "R8"
-			(at 144.526 85.344 90)
+			(at 205.486 45.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5242,7 +5625,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 89.662 90)
+			(at 208.28 50.292 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5250,7 +5633,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 89.408 90)
+			(at 207.01 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +5642,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 87.63 0)
+			(at 207.01 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,7 +5651,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 87.63 0)
+			(at 207.01 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,7 +5666,7 @@
 			(uuid "12c9a775-1436-4cee-9ab0-1b0b7ddf7a2a")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R8")
 					(unit 1)
@@ -5350,7 +5733,7 @@
 			(uuid "2e60fd29-e655-4331-a912-7148fb585b91")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R50")
 					(unit 1)
@@ -5360,7 +5743,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 68.58 90)
+		(at 137.16 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5368,7 +5751,7 @@
 		(dnp no)
 		(uuid "7950a6f0-2ffe-485c-aacd-0bb1083645cb")
 		(property "Reference" "R23"
-			(at 145.796 66.294 90)
+			(at 135.636 76.454 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5376,7 +5759,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 70.612 90)
+			(at 138.43 80.772 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5384,7 +5767,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 70.358 90)
+			(at 137.16 80.518 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5393,7 +5776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 68.58 0)
+			(at 137.16 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5402,7 +5785,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 68.58 0)
+			(at 137.16 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5417,7 +5800,7 @@
 			(uuid "93e85df8-4100-47fb-b160-b6c67dc81cb8")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R23")
 					(unit 1)
@@ -5427,7 +5810,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 21.59 270)
+		(at 132.08 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5436,7 +5819,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d371bef-f253-42aa-b552-e2153d47364f")
 		(property "Reference" "#PWR023"
-			(at 137.16 21.59 0)
+			(at 125.73 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5445,7 +5828,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 21.5899 90)
+			(at 128.27 31.7499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5454,7 +5837,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 21.59 0)
+			(at 132.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5463,7 +5846,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 21.59 0)
+			(at 132.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5472,7 +5855,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 21.59 0)
+			(at 132.08 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +5867,7 @@
 			(uuid "b08255c3-1aec-49d9-8647-e703b8afb60c")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR023")
 					(unit 1)
@@ -5494,7 +5877,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 144.78 186.69 0)
+		(at 132.08 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5503,7 +5886,7 @@
 		(fields_autoplaced yes)
 		(uuid "809f95f1-5fcd-4a67-beae-3ac1b9d70be3")
 		(property "Reference" "H4"
-			(at 147.32 185.4199 0)
+			(at 134.62 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5512,7 +5895,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 147.32 187.9599 0)
+			(at 134.62 187.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5521,7 +5904,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 144.78 186.69 0)
+			(at 132.08 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5530,7 +5913,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 186.69 0)
+			(at 132.08 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5539,7 +5922,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 144.78 186.69 0)
+			(at 132.08 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5548,7 +5931,7 @@
 			)
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "H4")
 					(unit 1)
@@ -5615,7 +5998,7 @@
 			(uuid "360ad6d4-5d0f-481f-ba2a-058450bb1515")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R51")
 					(unit 1)
@@ -5625,7 +6008,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 121.92 270)
+		(at 203.2 82.55 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5634,7 +6017,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ca04e61-88ae-4b35-94e7-33ed0c4194e5")
 		(property "Reference" "#PWR016"
-			(at 135.89 121.92 0)
+			(at 196.85 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5643,7 +6026,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 121.9199 90)
+			(at 199.39 82.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5652,7 +6035,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 121.92 0)
+			(at 203.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5661,7 +6044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 121.92 0)
+			(at 203.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5670,7 +6053,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 121.92 0)
+			(at 203.2 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5682,7 +6065,7 @@
 			(uuid "f78f4752-39cf-434c-991a-1974fab63751")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR016")
 					(unit 1)
@@ -5692,7 +6075,7 @@
 	)
 	(symbol
 		(lib_id "todbot_eagle2023:TouchRotary")
-		(at 234.95 123.19 0)
+		(at 237.49 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5701,7 +6084,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d0c921a-733b-4828-ae30-d175f5bbfcb0")
 		(property "Reference" "TOUCHROTARY2"
-			(at 241.3 123.19 0)
+			(at 243.84 149.86 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5710,7 +6093,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 227.33 133.35 0)
+			(at 229.87 160.02 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -5720,7 +6103,7 @@
 			)
 		)
 		(property "Footprint" "todbot_eagle2023:TOUCHROTARY1B"
-			(at 234.696 119.888 0)
+			(at 237.236 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5729,7 +6112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 123.19 0)
+			(at 237.49 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5738,7 +6121,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 123.19 0)
+			(at 237.49 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5756,7 +6139,7 @@
 			(uuid "aa1e57ba-fc91-4ab4-b248-c01388c0a7e7")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "TOUCHROTARY2")
 					(unit 1)
@@ -5765,17 +6148,18 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 49.53 270)
+		(lib_name "MountingHole_1")
+		(lib_id "Mechanical:MountingHole")
+		(at 156.21 186.69 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8ee43b0c-ad0e-4d94-ab3f-667e4f973e14")
-		(property "Reference" "SW5"
-			(at 170.18 48.2599 90)
+		(uuid "8e2d8fc5-2e9a-43a8-9286-06844de05d69")
+		(property "Reference" "H8"
+			(at 158.75 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5783,8 +6167,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Capacitive Button"
-			(at 170.18 50.7999 90)
+		(property "Value" "MountingHole"
+			(at 158.75 187.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5792,8 +6176,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 49.53 0)
+		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+			(at 156.21 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5802,7 +6186,71 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 49.53 0)
+			(at 156.21 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 156.21 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun-Switch:Capacitive Button")
+		(at 154.94 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ee43b0c-ad0e-4d94-ab3f-667e4f973e14")
+		(property "Reference" "SW5"
+			(at 160.02 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Capacitive Button"
+			(at 160.02 60.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
+			(at 147.32 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5811,7 +6259,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 49.53 0)
+			(at 154.94 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5823,7 +6271,7 @@
 			(uuid "c4d7a859-6bc7-4db4-a1e4-fae62f6d9915")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW5")
 					(unit 1)
@@ -5888,7 +6336,7 @@
 			(uuid "7b27b33c-9270-4e8c-b3e3-ccb95ef72a15")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR02")
 					(unit 1)
@@ -5898,7 +6346,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 80.01 90)
+		(at 207.01 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5906,7 +6354,7 @@
 		(dnp no)
 		(uuid "8fcf9668-58fd-4b73-a102-d1c3201f95ad")
 		(property "Reference" "R7"
-			(at 144.526 77.724 90)
+			(at 205.486 38.354 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,7 +6362,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 82.042 90)
+			(at 208.28 42.672 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5922,7 +6370,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 81.788 90)
+			(at 207.01 42.418 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5931,7 +6379,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 80.01 0)
+			(at 207.01 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5940,7 +6388,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 80.01 0)
+			(at 207.01 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5955,7 +6403,7 @@
 			(uuid "a774be63-5754-421e-b830-5c17570ebe3c")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R7")
 					(unit 1)
@@ -5965,7 +6413,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 27.94 270)
+		(at 132.08 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5974,7 +6422,7 @@
 		(fields_autoplaced yes)
 		(uuid "9142923c-fc23-44f5-acec-a893ac601392")
 		(property "Reference" "#PWR024"
-			(at 137.16 27.94 0)
+			(at 125.73 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +6431,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 27.9399 90)
+			(at 128.27 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5992,7 +6440,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 27.94 0)
+			(at 132.08 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6001,7 +6449,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 27.94 0)
+			(at 132.08 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6010,7 +6458,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 27.94 0)
+			(at 132.08 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,7 +6470,7 @@
 			(uuid "a262c2d3-a6eb-4e99-aafe-a011afc37228")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR024")
 					(unit 1)
@@ -6032,7 +6480,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 90.17 118.11 90)
+		(at 88.9 118.11 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6040,7 +6488,7 @@
 		(dnp no)
 		(uuid "91f0dde9-a570-4eae-8373-c11d714afe4d")
 		(property "Reference" "#PWR021"
-			(at 93.98 118.11 0)
+			(at 92.71 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6049,7 +6497,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 86.614 118.11 0)
+			(at 85.344 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,7 +6505,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 118.11 0)
+			(at 88.9 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6066,7 +6514,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 118.11 0)
+			(at 88.9 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6075,7 +6523,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 90.17 118.11 0)
+			(at 88.9 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6087,7 +6535,7 @@
 			(uuid "436e16f3-24d4-4e05-86f2-6c7440f8ecb6")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR021")
 					(unit 1)
@@ -6097,7 +6545,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 106.68 270)
+		(at 203.2 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6106,7 +6554,7 @@
 		(fields_autoplaced yes)
 		(uuid "925ebdb1-c7e2-4e80-a05c-4952b9199306")
 		(property "Reference" "#PWR014"
-			(at 135.89 106.68 0)
+			(at 196.85 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6115,7 +6563,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 106.6799 90)
+			(at 199.39 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6124,7 +6572,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 106.68 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6133,7 +6581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 106.68 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6142,7 +6590,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 106.68 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6154,7 +6602,7 @@
 			(uuid "82540bc4-9a9e-46e1-8cef-852144e3c742")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR014")
 					(unit 1)
@@ -6164,7 +6612,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 110.49 270)
+		(at 203.2 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6173,7 +6621,7 @@
 		(fields_autoplaced yes)
 		(uuid "96a70a07-dfa5-420e-8e54-a11949286296")
 		(property "Reference" "#PWR07"
-			(at 194.31 110.49 0)
+			(at 196.85 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6182,7 +6630,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 110.4899 90)
+			(at 199.39 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6191,7 +6639,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 110.49 0)
+			(at 203.2 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6200,7 +6648,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 110.49 0)
+			(at 203.2 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6209,7 +6657,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 110.49 0)
+			(at 203.2 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6221,7 +6669,7 @@
 			(uuid "249bf304-dd51-437b-af97-b556455ac468")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR07")
 					(unit 1)
@@ -6231,7 +6679,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 148.59 270)
+		(at 203.2 109.22 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6240,7 +6688,7 @@
 		(fields_autoplaced yes)
 		(uuid "a254cd08-63f2-4e2c-bccc-15516e11a3c5")
 		(property "Reference" "#PWR019"
-			(at 135.89 148.59 0)
+			(at 196.85 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6249,7 +6697,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 148.5899 90)
+			(at 199.39 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6258,7 +6706,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 148.59 0)
+			(at 203.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6267,7 +6715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 148.59 0)
+			(at 203.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6276,7 +6724,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 148.59 0)
+			(at 203.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6288,7 +6736,7 @@
 			(uuid "48f5b550-eff3-436e-8da6-526499593c6d")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR019")
 					(unit 1)
@@ -6298,7 +6746,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 144.78 181.61 0)
+		(at 132.08 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6307,7 +6755,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2b825e5-ebe4-4c10-ab04-ebe6707b2d9f")
 		(property "Reference" "H3"
-			(at 147.32 180.3399 0)
+			(at 134.62 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6316,7 +6764,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 147.32 182.8799 0)
+			(at 134.62 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6325,7 +6773,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 144.78 181.61 0)
+			(at 132.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6334,7 +6782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 181.61 0)
+			(at 132.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6343,7 +6791,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 144.78 181.61 0)
+			(at 132.08 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,7 +6800,7 @@
 			)
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "H3")
 					(unit 1)
@@ -6418,7 +6866,7 @@
 			(uuid "6418d00a-086c-4a57-91a8-eff49fd9d2fd")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR04")
 					(unit 1)
@@ -6428,7 +6876,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 123.19 90)
+		(at 207.01 149.86 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6436,7 +6884,7 @@
 		(dnp no)
 		(uuid "a7693a49-e469-4562-b9ef-c233b1919690")
 		(property "Reference" "R5"
-			(at 202.946 120.904 90)
+			(at 205.486 147.574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6444,7 +6892,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 205.74 125.222 90)
+			(at 208.28 151.892 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6452,7 +6900,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 124.968 90)
+			(at 207.01 151.638 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6461,7 +6909,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 123.19 0)
+			(at 207.01 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6470,7 +6918,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 123.19 0)
+			(at 207.01 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6485,7 +6933,7 @@
 			(uuid "e5ff1ea2-f273-493f-bc7d-76264bd19a14")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R5")
 					(unit 1)
@@ -6495,7 +6943,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 133.35 270)
+		(at 203.2 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6504,7 +6952,7 @@
 		(fields_autoplaced yes)
 		(uuid "a8d8dad2-74da-4e25-aeb6-856635e5dabc")
 		(property "Reference" "#PWR017"
-			(at 135.89 133.35 0)
+			(at 196.85 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6513,7 +6961,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 133.3499 90)
+			(at 199.39 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6522,7 +6970,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 133.35 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6531,7 +6979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 133.35 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,7 +6988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 133.35 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,7 +7000,7 @@
 			(uuid "07bbad8c-587e-4f18-a4e1-3bf347f59314")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR017")
 					(unit 1)
@@ -6618,7 +7066,7 @@
 			(uuid "4fec8251-7cb7-436f-b0cf-3fadffb4f937")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR030")
 					(unit 1)
@@ -6628,7 +7076,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 80.01 270)
+		(at 203.2 40.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6637,7 +7085,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab5aa218-86cf-41da-a8a3-bfd1f1d049a3")
 		(property "Reference" "#PWR011"
-			(at 135.89 80.01 0)
+			(at 196.85 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6646,7 +7094,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 80.0099 90)
+			(at 199.39 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6655,7 +7103,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 80.01 0)
+			(at 203.2 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6664,7 +7112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 80.01 0)
+			(at 203.2 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6673,7 +7121,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 80.01 0)
+			(at 203.2 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6685,7 +7133,7 @@
 			(uuid "b8f5dd2d-063f-4dde-b06c-8f5a6c79f161")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR011")
 					(unit 1)
@@ -6695,7 +7143,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 105.41 270)
+		(at 203.2 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6704,7 +7152,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac2e2dd0-4483-4b9a-b8ca-1df1ac9962db")
 		(property "Reference" "#PWR06"
-			(at 194.31 105.41 0)
+			(at 196.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6713,7 +7161,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 105.4099 90)
+			(at 199.39 132.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6722,7 +7170,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 105.41 0)
+			(at 203.2 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6731,7 +7179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 105.41 0)
+			(at 203.2 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6740,7 +7188,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 105.41 0)
+			(at 203.2 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6752,7 +7200,7 @@
 			(uuid "18d1938c-dda7-4bd2-b0f6-a9a76d6f5d24")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR06")
 					(unit 1)
@@ -6819,7 +7267,7 @@
 			(uuid "9f00e85e-ed4e-4162-bae6-971ece9410be")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR01")
 					(unit 1)
@@ -6829,7 +7277,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 68.58 270)
+		(at 133.35 78.74 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6838,7 +7286,7 @@
 		(fields_autoplaced yes)
 		(uuid "adbc062a-60fc-4a17-b367-6a39c17178a3")
 		(property "Reference" "#PWR029"
-			(at 137.16 68.58 0)
+			(at 127 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6847,7 +7295,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 68.5799 90)
+			(at 129.54 78.7399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6856,7 +7304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 68.58 0)
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6865,7 +7313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 68.58 0)
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6874,7 +7322,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 68.58 0)
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6886,7 +7334,7 @@
 			(uuid "9249fcfe-1acf-4266-bf0c-5b320aef865b")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR029")
 					(unit 1)
@@ -6896,7 +7344,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 55.88 90)
+		(at 137.16 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6904,7 +7352,7 @@
 		(dnp no)
 		(uuid "af550113-b74b-4a3d-a919-37172d70ab7c")
 		(property "Reference" "R21"
-			(at 145.796 53.594 90)
+			(at 135.636 63.754 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6912,7 +7360,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 57.912 90)
+			(at 138.43 68.072 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6920,7 +7368,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 57.658 90)
+			(at 137.16 67.818 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6929,7 +7377,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 55.88 0)
+			(at 137.16 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6938,7 +7386,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 55.88 0)
+			(at 137.16 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6953,7 +7401,7 @@
 			(uuid "c3eb23f4-9406-4e0a-a123-6b0a9edd9e2b")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R21")
 					(unit 1)
@@ -6963,7 +7411,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 21.59 270)
+		(at 154.94 31.75 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6972,7 +7420,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3871118-ef9c-4a2a-a156-29f39b29f0e6")
 		(property "Reference" "SW1"
-			(at 170.18 20.3199 90)
+			(at 160.02 30.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6981,7 +7429,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 22.8599 90)
+			(at 160.02 33.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6990,7 +7438,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 21.59 0)
+			(at 147.32 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6999,7 +7447,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 21.59 0)
+			(at 144.78 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7008,7 +7456,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 21.59 0)
+			(at 154.94 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7020,7 +7468,7 @@
 			(uuid "8760a6b8-8739-435e-be37-023bcbe7125e")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW1")
 					(unit 1)
@@ -7030,7 +7478,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 118.11 90)
+		(at 207.01 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7038,7 +7486,7 @@
 		(dnp no)
 		(uuid "b6a46577-c08f-4512-ac33-ef26061be81c")
 		(property "Reference" "R4"
-			(at 202.946 115.824 90)
+			(at 205.486 142.494 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7046,7 +7494,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 205.74 120.142 90)
+			(at 208.28 146.812 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7054,7 +7502,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 119.888 90)
+			(at 207.01 146.558 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7063,7 +7511,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 118.11 0)
+			(at 207.01 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7072,7 +7520,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 118.11 0)
+			(at 207.01 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7087,7 +7535,7 @@
 			(uuid "de36e8dd-fe1d-4657-913a-5fc3f327b37e")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R4")
 					(unit 1)
@@ -7097,7 +7545,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 144.78 171.45 0)
+		(at 132.08 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7106,7 +7554,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba99eee6-51ee-4ea1-afe0-01ce9ef98886")
 		(property "Reference" "H1"
-			(at 147.32 170.1799 0)
+			(at 134.62 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,7 +7563,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 147.32 172.7199 0)
+			(at 134.62 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,7 +7572,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580"
-			(at 144.78 171.45 0)
+			(at 132.08 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7133,7 +7581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 171.45 0)
+			(at 132.08 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7142,7 +7590,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 144.78 171.45 0)
+			(at 132.08 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7151,7 +7599,7 @@
 			)
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "H1")
 					(unit 1)
@@ -7218,7 +7666,7 @@
 			(uuid "7e2587f0-81ea-4dda-ba15-c6d9647f93ec")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR032")
 					(unit 1)
@@ -7228,7 +7676,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 34.29 270)
+		(at 154.94 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7237,7 +7685,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8fec228-cf0e-43f5-811d-be0ac0f2b7f8")
 		(property "Reference" "SW3"
-			(at 170.18 33.0199 90)
+			(at 160.02 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7246,7 +7694,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 35.5599 90)
+			(at 160.02 45.7199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7255,7 +7703,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 34.29 0)
+			(at 147.32 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7264,7 +7712,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 34.29 0)
+			(at 144.78 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7273,7 +7721,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 34.29 0)
+			(at 154.94 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7285,7 +7733,7 @@
 			(uuid "c28885de-e17c-4d7c-a3ce-d54d1eee543c")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW3")
 					(unit 1)
@@ -7295,7 +7743,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 34.29 270)
+		(at 132.08 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7304,7 +7752,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9155440-57f4-467d-9abe-6d2f8975dba5")
 		(property "Reference" "#PWR025"
-			(at 137.16 34.29 0)
+			(at 125.73 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7313,7 +7761,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 34.2899 90)
+			(at 128.27 44.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7322,7 +7770,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 34.29 0)
+			(at 132.08 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7331,7 +7779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 34.29 0)
+			(at 132.08 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7340,7 +7788,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 34.29 0)
+			(at 132.08 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7352,7 +7800,7 @@
 			(uuid "6a58a2e3-063a-4571-aee8-1dfd56fd63bf")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR025")
 					(unit 1)
@@ -7418,7 +7866,7 @@
 			(uuid "6d9bd3f3-e1ea-4c17-8e07-d1110504813b")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR020")
 					(unit 1)
@@ -7428,7 +7876,7 @@
 	)
 	(symbol
 		(lib_id "todbot_eagle2023:TouchSlider3")
-		(at 173.99 140.97 0)
+		(at 234.95 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7437,7 +7885,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce9289c8-d749-4035-9570-101ad8b0c7d7")
 		(property "Reference" "FADER3"
-			(at 177.8 139.7 0)
+			(at 238.76 100.33 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -7446,7 +7894,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 168.91 153.67 0)
+			(at 229.87 114.3 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -7456,7 +7904,7 @@
 			)
 		)
 		(property "Footprint" "todbot_eagle2023:TOUCHSLIDER3_8x40B"
-			(at 173.99 140.97 0)
+			(at 234.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7465,7 +7913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 140.97 0)
+			(at 234.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7474,7 +7922,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 140.97 0)
+			(at 234.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7492,7 +7940,7 @@
 			(uuid "cb2d5025-2c54-465c-9c9b-58f0871e1d74")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "FADER3")
 					(unit 1)
@@ -7558,7 +8006,7 @@
 			(uuid "d230a8d7-e51d-415c-b196-6b1aebd1bd73")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR022")
 					(unit 1)
@@ -7568,7 +8016,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 40.64 90)
+		(at 137.16 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7576,7 +8024,7 @@
 		(dnp no)
 		(uuid "d11d6b18-45e6-452f-b229-248d0386cc1e")
 		(property "Reference" "R19"
-			(at 145.796 38.354 90)
+			(at 135.636 48.514 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7584,7 +8032,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 42.672 90)
+			(at 138.43 52.832 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7592,7 +8040,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 42.418 90)
+			(at 137.16 52.578 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7601,7 +8049,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 40.64 0)
+			(at 137.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7610,7 +8058,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 40.64 0)
+			(at 137.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7625,7 +8073,7 @@
 			(uuid "fa5a4e04-3576-424b-b11d-a77a0a41bf36")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R19")
 					(unit 1)
@@ -7635,7 +8083,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 200.66 128.27 270)
+		(at 203.2 154.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7644,7 +8092,7 @@
 		(fields_autoplaced yes)
 		(uuid "d56c3b05-761a-4b4d-b9d9-f8905e093753")
 		(property "Reference" "#PWR010"
-			(at 194.31 128.27 0)
+			(at 196.85 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,7 +8101,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 196.85 128.2699 90)
+			(at 199.39 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7662,7 +8110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 128.27 0)
+			(at 203.2 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7671,7 +8119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 128.27 0)
+			(at 203.2 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7680,7 +8128,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 128.27 0)
+			(at 203.2 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7692,7 +8140,7 @@
 			(uuid "9006e6e7-d807-4661-b877-5134aaaaa6bb")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR010")
 					(unit 1)
@@ -7702,7 +8150,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 21.59 90)
+		(at 137.16 31.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7710,7 +8158,7 @@
 		(dnp no)
 		(uuid "d85beaad-b9ba-4474-911d-eece6f78726f")
 		(property "Reference" "R16"
-			(at 145.796 19.304 90)
+			(at 135.636 29.464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7718,7 +8166,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 23.622 90)
+			(at 138.43 33.782 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7726,7 +8174,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 23.368 90)
+			(at 137.16 33.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7735,7 +8183,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 21.59 0)
+			(at 137.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7744,7 +8192,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 21.59 0)
+			(at 137.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7759,7 +8207,7 @@
 			(uuid "b767eb0f-ed30-41eb-a9c3-1f445235660e")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R16")
 					(unit 1)
@@ -7769,7 +8217,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 143.51 40.64 270)
+		(at 132.08 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7778,7 +8226,7 @@
 		(fields_autoplaced yes)
 		(uuid "e379e784-9add-4db9-8142-61704a6785c3")
 		(property "Reference" "#PWR026"
-			(at 137.16 40.64 0)
+			(at 125.73 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7787,7 +8235,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 40.6399 90)
+			(at 128.27 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7796,7 +8244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 40.64 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7805,7 +8253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 40.64 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7814,7 +8262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 40.64 0)
+			(at 132.08 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7826,7 +8274,7 @@
 			(uuid "2b857cfe-3ab5-4270-aeaa-595fe8089657")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR026")
 					(unit 1)
@@ -7836,7 +8284,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 128.27 90)
+		(at 207.01 154.94 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7844,7 +8292,7 @@
 		(dnp no)
 		(uuid "eb487e3e-9ecc-45ad-9291-700df9a9e26e")
 		(property "Reference" "R6"
-			(at 202.946 125.984 90)
+			(at 205.486 152.654 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +8300,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 205.74 130.302 90)
+			(at 208.28 156.972 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,7 +8308,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.47 130.048 90)
+			(at 207.01 156.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,7 +8317,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 128.27 0)
+			(at 207.01 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7878,7 +8326,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 128.27 0)
+			(at 207.01 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7893,7 +8341,7 @@
 			(uuid "4bf252c2-2de5-4a1e-9aa2-4f8ead24a94b")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R6")
 					(unit 1)
@@ -7903,7 +8351,7 @@
 	)
 	(symbol
 		(lib_id "SparkFun-Switch:Capacitive Button")
-		(at 165.1 68.58 270)
+		(at 154.94 78.74 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7912,7 +8360,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7b4e2a0-9fda-463b-acd1-afbe5228238a")
 		(property "Reference" "SW8"
-			(at 170.18 67.3099 90)
+			(at 160.02 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7921,7 +8369,7 @@
 			)
 		)
 		(property "Value" "Capacitive Button"
-			(at 170.18 69.8499 90)
+			(at 160.02 80.0099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7930,7 +8378,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
-			(at 157.48 68.58 0)
+			(at 147.32 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7939,7 +8387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 68.58 0)
+			(at 144.78 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7948,7 +8396,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 165.1 68.58 0)
+			(at 154.94 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7960,7 +8408,7 @@
 			(uuid "eec31e07-f7ec-4a2c-b5af-df5ee4e5b98f")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "SW8")
 					(unit 1)
@@ -8151,7 +8599,7 @@
 			(uuid "7c094314-45c0-479c-bb55-9928b56699e6")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "U1")
 					(unit 1)
@@ -8161,7 +8609,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 106.68 90)
+		(at 207.01 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8169,7 +8617,7 @@
 		(dnp no)
 		(uuid "fb55c5dd-6838-46d8-8ee1-5d9591852bb5")
 		(property "Reference" "R10"
-			(at 144.526 104.394 90)
+			(at 205.486 65.024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,7 +8625,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 108.712 90)
+			(at 208.28 69.342 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8185,7 +8633,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 108.458 90)
+			(at 207.01 69.088 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8194,7 +8642,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 106.68 0)
+			(at 207.01 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8203,7 +8651,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 106.68 0)
+			(at 207.01 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8218,7 +8666,7 @@
 			(uuid "09c07efa-eff2-43f0-adf0-478f401b6ee5")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R10")
 					(unit 1)
@@ -8228,7 +8676,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 147.32 62.23 90)
+		(at 137.16 72.39 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8236,7 +8684,7 @@
 		(dnp no)
 		(uuid "fb5d14e7-8b0c-443b-81dc-14f8351b88b1")
 		(property "Reference" "R22"
-			(at 145.796 59.944 90)
+			(at 135.636 70.104 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8244,7 +8692,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 148.59 64.262 90)
+			(at 138.43 74.422 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8252,7 +8700,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 147.32 64.008 90)
+			(at 137.16 74.168 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8261,7 +8709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 62.23 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8270,7 +8718,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 147.32 62.23 0)
+			(at 137.16 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8285,7 +8733,7 @@
 			(uuid "4095ee83-bb9a-4ff0-9476-59fb16348964")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R22")
 					(unit 1)
@@ -8295,7 +8743,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 146.05 133.35 90)
+		(at 207.01 93.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8303,7 +8751,7 @@
 		(dnp no)
 		(uuid "fc29e7a8-d7ec-44ad-971c-7d6c08a9fd14")
 		(property "Reference" "R13"
-			(at 144.526 131.064 90)
+			(at 205.486 91.694 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8311,7 +8759,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 147.32 135.382 90)
+			(at 208.28 96.012 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8319,7 +8767,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 135.128 90)
+			(at 207.01 95.758 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8328,7 +8776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 133.35 0)
+			(at 207.01 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8337,7 +8785,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 146.05 133.35 0)
+			(at 207.01 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8352,7 +8800,7 @@
 			(uuid "e6770c1c-e48f-4c29-ae44-4cd5ca1e19a2")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R13")
 					(unit 1)
@@ -8362,7 +8810,7 @@
 	)
 	(symbol
 		(lib_id "todbot_eagle2023:TouchRotary")
-		(at 234.95 105.41 0)
+		(at 237.49 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8371,7 +8819,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd66859e-f392-4cec-849e-48ecda399352")
 		(property "Reference" "TOUCHROTARY1"
-			(at 241.3 105.41 0)
+			(at 243.84 132.08 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -8380,7 +8828,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 227.33 115.57 0)
+			(at 229.87 142.24 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -8390,7 +8838,7 @@
 			)
 		)
 		(property "Footprint" "todbot_eagle2023:TOUCHROTARY1B"
-			(at 234.696 102.108 0)
+			(at 237.236 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8399,7 +8847,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 105.41 0)
+			(at 237.49 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8408,7 +8856,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 105.41 0)
+			(at 237.49 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8426,7 +8874,7 @@
 			(uuid "496c9f6a-926d-4ee5-b2dc-c420fc7c7bbc")
 		)
 		(instances
-			(project "PicoCapTouchTest"
+			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "TOUCHROTARY1")
 					(unit 1)
