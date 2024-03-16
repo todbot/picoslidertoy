@@ -2007,16 +2007,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 83.82) (xy 39.37 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1801a7ce-9a81-404b-bf1e-29db7d8d5e53")
-	)
-	(wire
-		(pts
 			(xy 26.67 60.96) (xy 39.37 60.96)
 		)
 		(stroke
@@ -2074,16 +2064,6 @@
 			(type default)
 		)
 		(uuid "33f36330-e528-4d9d-adff-9da6233b5b8e")
-	)
-	(wire
-		(pts
-			(xy 26.67 81.28) (xy 39.37 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34ad5bc5-f074-4db7-a132-8e8d599f6338")
 	)
 	(wire
 		(pts
@@ -2227,13 +2207,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 78.74) (xy 39.37 78.74)
+			(xy 26.67 81.28) (xy 39.37 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "623e585e-a6ac-4101-bf24-f0cf69ee073c")
+		(uuid "6a737c47-4c48-49c4-ae17-27dcdfef63e9")
 	)
 	(wire
 		(pts
@@ -2417,6 +2397,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 83.82) (xy 39.37 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05e1be3-27fd-4f53-b652-9e2fe892430e")
+	)
+	(wire
+		(pts
 			(xy 76.2 55.88) (xy 74.93 55.88)
 		)
 		(stroke
@@ -2537,13 +2527,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 86.36) (xy 39.37 86.36)
+			(xy 140.97 85.09) (xy 154.94 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed0fed4e-c6f8-41f6-bf4d-8a6a0752af4c")
+		(uuid "ed05a4ea-9eea-4c24-8d97-2217a02a301d")
 	)
 	(wire
 		(pts
@@ -2587,6 +2577,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 86.36) (xy 39.37 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4ce015f-f10b-495a-8f4b-491e07e9e17a")
+	)
+	(wire
+		(pts
 			(xy 132.08 31.75) (xy 133.35 31.75)
 		)
 		(stroke
@@ -2625,6 +2625,16 @@
 		)
 		(uuid "fba46984-ab7d-440e-aab3-70f9cc7312af")
 	)
+	(wire
+		(pts
+			(xy 26.67 78.74) (xy 39.37 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe419181-8c7b-4005-a57f-f03d8a9bd1af")
+	)
 	(label "FADER2A"
 		(at 213.36 67.31 0)
 		(fields_autoplaced yes)
@@ -2658,6 +2668,17 @@
 		)
 		(uuid "14feebd2-dab0-45ae-8b02-28f46d59dcbd")
 	)
+	(label "ROT2C"
+		(at 26.67 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b18631e-13c5-4150-9f1a-4d2754cef081")
+	)
 	(label "TPAD6"
 		(at 82.55 91.44 0)
 		(fields_autoplaced yes)
@@ -2668,6 +2689,17 @@
 			(justify left bottom)
 		)
 		(uuid "1b915420-ea81-4bb0-9bb2-df79671a4480")
+	)
+	(label "TPAD9"
+		(at 26.67 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bf761d0-081d-4cf7-807b-ba22ec3a2993")
 	)
 	(label "TPAD2"
 		(at 82.55 78.74 0)
@@ -2712,17 +2744,6 @@
 			(justify left bottom)
 		)
 		(uuid "2b355eb9-1916-4fe0-83b9-e6f81515d3ea")
-	)
-	(label "ROT2C"
-		(at 27.94 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "304f72b1-26fd-4d06-b4d5-78c2aec7299a")
 	)
 	(label "FADER1B"
 		(at 26.67 45.72 0)
@@ -2779,6 +2800,17 @@
 		)
 		(uuid "5530c665-5e68-4dd7-8944-c78c035f1b2f")
 	)
+	(label "ROT2A"
+		(at 26.67 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cdb8444-b15a-4321-993c-9eb6a9d48041")
+	)
 	(label "FADER1A"
 		(at 213.36 40.64 0)
 		(fields_autoplaced yes)
@@ -2833,17 +2865,6 @@
 			(justify left bottom)
 		)
 		(uuid "74d403fb-0424-4524-ad1c-0dabd77aa3c5")
-	)
-	(label "ROT2A"
-		(at 27.94 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7887b9f8-e8f5-4207-ac12-71532cbb38db")
 	)
 	(label "FADER3A"
 		(at 213.36 93.98 0)
@@ -2966,6 +2987,17 @@
 		)
 		(uuid "a9cdccd3-dbe6-40a0-ad2d-1daecca5be3d")
 	)
+	(label "ROT2B"
+		(at 26.67 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aadbb430-e30a-40ed-99aa-9d76508ba9e4")
+	)
 	(label "ROT1A"
 		(at 26.67 68.58 0)
 		(fields_autoplaced yes)
@@ -2976,6 +3008,17 @@
 			(justify left bottom)
 		)
 		(uuid "acc3042a-350a-4dde-b4a3-00fd1bad7cf8")
+	)
+	(label "TPAD9"
+		(at 144.78 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afb6ee67-a5a5-4822-8cd8-d0530656da3d")
 	)
 	(label "TPAD7"
 		(at 144.78 72.39 0)
@@ -3163,17 +3206,6 @@
 			(justify left bottom)
 		)
 		(uuid "f9930cb2-615f-40f3-8674-b0cf8ee65a0c")
-	)
-	(label "ROT2B"
-		(at 27.94 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fee8b17b-f41d-4133-ba7e-2cb18c59c986")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5683,7 +5715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "705dddcf-a454-494e-9cfa-7607a5107b98")
-		(property "Reference" "R50"
+		(property "Reference" "R26"
 			(at 85.344 109.474 90)
 			(effects
 				(font
@@ -5735,7 +5767,7 @@
 		(instances
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "R50")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -5948,7 +5980,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8acdb986-bdea-4e30-882a-91cada45a3b8")
-		(property "Reference" "R51"
+		(property "Reference" "R25"
 			(at 78.994 109.474 90)
 			(effects
 				(font
@@ -6000,7 +6032,7 @@
 		(instances
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "R51")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6406,6 +6438,73 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 85.09 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "911f584d-ca76-48c8-b673-23a6ef2d7cee")
+		(property "Reference" "R24"
+			(at 135.636 82.804 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 138.43 87.122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 137.16 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e94989c-0d73-4adf-9891-47c0cd5576b9")
+		)
+		(pin "1"
+			(uuid "2c74753e-a1cd-47f1-931a-d44e525b09f8")
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8082,6 +8181,73 @@
 		)
 	)
 	(symbol
+		(lib_id "SparkFun-Switch:Capacitive Button")
+		(at 154.94 85.09 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3a77549-7d39-496a-b069-31319d59448f")
+		(property "Reference" "SW9"
+			(at 160.02 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Capacitive Button"
+			(at 160.02 86.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
+			(at 147.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 154.94 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23d54073-7670-4b9a-9d3f-6eb590898a8e")
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 203.2 154.94 270)
 		(unit 1)
@@ -8344,6 +8510,73 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 85.09 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f74cba96-5749-45e6-a48c-46c93d10694f")
+		(property "Reference" "#PWR036"
+			(at 127 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 85.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2099a4e1-7d41-4165-8abd-df72cbb8f709")
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
