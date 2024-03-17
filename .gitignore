@@ -27,3 +27,7 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# New misc weird files as seen by tod
+production
+*.lck

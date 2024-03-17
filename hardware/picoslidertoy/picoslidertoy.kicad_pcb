@@ -2709,6 +2709,7 @@
 			(at -0.4 -0.299504 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "c7023a91-9bfc-43f3-8ed5-607583d5de49")
 			(effects
 				(font
@@ -2774,7 +2775,7 @@
 		(sheetfile "picoslidertoy.kicad_sch")
 		(attr smd)
 		(fp_text user "${REFERENCE}"
-			(at -0.5 -21.2 0)
+			(at -0.5 -22.098 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "ab6430f2-dca8-4315-88d2-92cb54c6500d")
@@ -2872,6 +2873,7 @@
 			(at -0.4 -0.299504 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "e65c90e2-6bb4-4df2-b6d6-243c85058d8a")
 			(effects
 				(font
@@ -2937,7 +2939,7 @@
 		(sheetfile "picoslidertoy.kicad_sch")
 		(attr smd)
 		(fp_text user "${REFERENCE}"
-			(at -1.8 21.4 0)
+			(at -0.508 -22.098 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "c281bad3-0640-4572-81f5-71c595b6a02d")
@@ -3342,6 +3344,7 @@
 			(at -0.4 -0.299504 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "cf9df9da-112a-4423-9f14-9207dba453a5")
 			(effects
 				(font
@@ -3407,7 +3410,7 @@
 		(sheetfile "picoslidertoy.kicad_sch")
 		(attr smd)
 		(fp_text user "${REFERENCE}"
-			(at -1.8 21.4 0)
+			(at -0.254 -22.098 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "5509adc2-72ce-47fc-b698-0b617bb8c183")
@@ -11605,6 +11608,17 @@
 		(uuid "579d2093-4aa1-4269-a34e-69e43e981226")
 	)
 	(gr_circle
+		(center 168.91 55.88)
+		(end 173.99 55.88)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "583e7dcd-a533-4c6c-9e0f-f9977e42cee5")
+	)
+	(gr_circle
 		(center 168.91 55.876893)
 		(end 186.69 55.876893)
 		(stroke
@@ -12235,6 +12249,17 @@
 		(layer "F.SilkS")
 		(uuid "f3bdf9a2-af48-4e4f-aab6-7be6124d78c7")
 	)
+	(gr_circle
+		(center 129.54 55.88)
+		(end 134.62 55.88)
+		(stroke
+			(width 0.254)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "f4d3a4bd-eaca-454a-be7e-1fa2bc305e5c")
+	)
 	(gr_arc
 		(start 59.566738 74.106369)
 		(mid 59.120369 75.184)
@@ -12278,16 +12303,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "fc301b95-13ea-4978-8d29-f1efbcd8a4af")
-	)
-	(gr_line
-		(start 25.4 55.88)
-		(end 190.5 55.88)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Dwgs.User")
-		(uuid "aff7fe02-0185-4735-8809-690e7eceb17d")
 	)
 	(gr_line
 		(start 30.48 25.4)
@@ -12384,6 +12399,18 @@
 		(layer "Edge.Cuts")
 		(uuid "e8f817dd-bff3-44e2-b2d0-4e8159f0f8bd")
 	)
+	(gr_text "JOCJLCJLCJLC"
+		(at 46.355 97.028 0)
+		(layer "B.SilkS")
+		(uuid "410d08c6-bf9c-485d-8496-dd1327ac10e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "picoslidertoy\ngithub.com/todbot/picoslidertoy\nU1: Raspberry Pi Pico\nDISP1: 1.09{dblquote} I2C OLED SSD1306\nR1-R23: 1M\nR25,R26: 10k"
 		(at 154.432 71.882 0)
 		(layer "B.SilkS")
@@ -12422,6 +12449,19 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "A"
+		(at 35.56 56.896 0)
+		(layer "F.SilkS")
+		(uuid "276e95a5-0b17-405d-b7d4-0441b5c8d4a4")
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "8"
 		(at 173.228 88.646 0)
 		(layer "F.SilkS")
@@ -12430,6 +12470,32 @@
 			(font
 				(size 3.81 3.81)
 				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "B"
+		(at 52.07 56.896 0)
+		(layer "F.SilkS")
+		(uuid "52b404a2-334f-46f3-b95d-6f7538f7b974")
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<    >"
+		(at 111.633 57.785 0)
+		(layer "F.SilkS")
+		(uuid "5ab097e3-baa8-4416-9a52-b866bafa35fc")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
 				(bold yes)
 			)
 			(justify left bottom)
@@ -12449,7 +12515,7 @@
 		)
 	)
 	(gr_text "picoslidertoy"
-		(at 141.986 31.75 0)
+		(at 141.986 33.274 0)
 		(layer "F.SilkS")
 		(uuid "6b75d448-30ab-4e23-a9c1-c1068c943e6f")
 		(effects
@@ -12467,7 +12533,7 @@
 		(uuid "76ef5817-c77f-42f3-9b01-eb298859a483")
 		(effects
 			(font
-				(size 2.54 2.54)
+				(size 1.27 2.54)
 				(thickness 0.254)
 			)
 			(justify left bottom)
@@ -12486,10 +12552,75 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "X"
+		(at 127.254 58.42 0)
+		(layer "F.SilkS")
+		(uuid "82d4f8bc-0c31-489c-9951-aad63b3f6c4f")
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "Y"
+		(at 166.878 58.42 0)
+		(layer "F.SilkS")
+		(uuid "8324e8ca-3171-474e-a61d-ddfac9a209de")
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<    >"
+		(at 171.281725 73.732488 90)
+		(layer "F.SilkS")
+		(uuid "8d338a38-0680-44ef-af17-731a409c4a39")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "3"
-		(at 78.232 88.646 0)
+		(at 77.978 88.646 0)
 		(layer "F.SilkS")
 		(uuid "a28a0153-ad10-4b65-9aea-148ed9575f5f")
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<     >"
+		(at 56.388 74.93 90)
+		(layer "F.SilkS")
+		(uuid "ab6805d9-57a1-4ef1-b6fd-b84813a74c69")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "C"
+		(at 68.834 56.896 0)
+		(layer "F.SilkS")
+		(uuid "bb4dbaa2-0c54-4444-9da3-78eb13893908")
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -12512,14 +12643,53 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "<    >"
+		(at 131.911725 73.732488 90)
+		(layer "F.SilkS")
+		(uuid "ccb3ed8c-dfa3-4df0-bef8-7a8e92754e19")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<    >"
+		(at 151.003 57.785 0)
+		(layer "F.SilkS")
+		(uuid "d336e26e-5878-4e48-b5a0-8bd02830642a")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "4"
-		(at 97.028 88.646 0)
+		(at 96.774 88.646 0)
 		(layer "F.SilkS")
 		(uuid "d4a254fa-57bf-438b-9801-a7d19f4abe04")
 		(effects
 			(font
 				(size 3.81 3.81)
 				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<     >"
+		(at 39.878 74.93 90)
+		(layer "F.SilkS")
+		(uuid "e1e43b1c-b87f-462d-8822-66da43ef9dd4")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
 				(bold yes)
 			)
 			(justify left bottom)
@@ -12533,6 +12703,19 @@
 			(font
 				(size 3.81 3.81)
 				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "<     >"
+		(at 73.152 74.676 90)
+		(layer "F.SilkS")
+		(uuid "fe198db8-2b3c-4cc5-8359-ccc973d78abd")
+		(effects
+			(font
+				(size 3.81 6.35)
+				(thickness 0.381)
 				(bold yes)
 			)
 			(justify left bottom)
