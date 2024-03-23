@@ -1,17 +1,15 @@
 #
-# picoslidertoy_test.py -- Testing for tiny capsense controller using Pico,
+# picoslidertoy_hwtest_test.py -- Testing for tiny capsense controller using Pico,
 # 2024 - @todbot / Tod Kurt - github.com/todbot/picoslidertoy
 #
-# based off of "picotouch_test.py":
-# picotouch_test.py -- Testing for tiny capsense controller using Pico,
+# based off of "picotouch_hwtest_code.py":
+# picotouch_hwtest_code.py -- Testing for tiny capsense controller using Pico,
 # 2021 - @todbot / Tod Kurt - github.com/todbot/picotouch
 #
 # To use:
 #
 # 2. Copy over this file as code.py:
 #   cp circuitpython/hwtest/code.py /Volumes/CIRCUITPY/code.py
-#
-# Need 1M pull-down on each input
 #
 
 import time
@@ -33,7 +31,6 @@ for pin in touch_pins:
     touchin = touchio.TouchIn(pin)
     touchin.threshold += touch_threshold_adjust
     touchins.append(touchin)  # for debug
-num_touch_pads = len(touch_pads)
 
 print("\n----------")
 print("picoslidertoy hwtest hello")

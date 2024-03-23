@@ -1,9 +1,9 @@
 #
-# picoslidertoy_test.py -- Testing for tiny capsense controller using Pico,
+# picoslidertoy_hwtest_display_code.py -- Testing for tiny capsense controller using Pico,
 # 2024 - @todbot / Tod Kurt - github.com/todbot/picoslidertoy
 #
-# based off of "picotouch_test.py":
-# picotouch_test.py -- Testing for tiny capsense controller using Pico,
+# based off of "picotouch_hwtest_code.py":
+# picotouch_hwtest_code.py -- Testing for tiny capsense controller using Pico,
 # 2021 - @todbot / Tod Kurt - github.com/todbot/picotouch
 #
 # To use:
@@ -12,8 +12,6 @@
 #   circup install adafruit_displayio_ssd1306
 # 2. Copy over this file as code.py:
 #   cp circuitpython/hwtest_display/code.py /Volumes/CIRCUITPY/code.py
-#
-# Need 1M pull-down on each input
 #
 
 import time
@@ -31,9 +29,6 @@ faderB_pins = (board.GP5, board.GP1, board.GP27)
 faderC_pins = (board.GP3, board.GP2, board.GP26)
 wheelX_pins = (board.GP7, board.GP8, board.GP9)
 wheelY_pins = (board.GP10, board.GP11, board.GP12)
-#pad_pins = (board.GP22, board.GP21, board.GP20, board.GP19,
-#            board.GP18, board.GP17, board.GP16, board.GP13, board.GP6)
-
 pad_pins = (board.GP22, board.GP21, board.GP20, board.GP19,
             board.GP18, board.GP17, board.GP16, board.GP6, board.GP13)
 
