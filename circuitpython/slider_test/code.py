@@ -58,7 +58,7 @@ class FaderDisplay(displayio.Group):
     """Display a simple virtual fader """
     def __init__(self, x,y, w,h, knob_w=10):
         super().__init__(x=x,y=y,scale=1)
-        self.w, self.h = w,h
+        self.w, self.h, self.knob_w = w,h, knob_w
         pW = displayio.Palette(1)
         pB = displayio.Palette(1)
         pW[0], pB[0] = 0xffffff, 0x000000
@@ -71,7 +71,7 @@ class FaderDisplay(displayio.Group):
         self.knob.y = h//2
         self.append(self.knob)
     def pos(self,v):
-        self.knob.y = int(v * self.h)
+        self.knob.y = int(v * (self.h-self.knob_w/2))
     def touch(self,v):
         self.knob[1].hidden = v
 
@@ -79,6 +79,7 @@ class WheelDisplay(displayio.Group):
     def __init__(self, x,y, r, knob_w=8):
         super().__init__(x=x,y=y,scale=1)
         self.r = r
+        self.knob_w = knob_w
         pW = displayio.Palette(1)
         pB = displayio.Palette(1)
         pW[0], pB[0] = 0xffffff, 0x000000
@@ -93,8 +94,8 @@ class WheelDisplay(displayio.Group):
         self.append(self.knob)
         self.pos(0.5)
     def pos(self,v):
-        self.knob.y = int(self.r * math.cos(v*6.28))
-        self.knob.x = int(self.r * math.sin(v*6.28))
+        self.knob.x = int((self.r-self.knob_w/2) * math.sin(v*6.28))
+        self.knob.y = int((self.r-self.knob_w/2) * math.cos(v*6.28))
     def touch(self,v):
         self.knob[1].hidden = v
 
@@ -119,8 +120,8 @@ for i in range(len(faders)):
     faders_disp.append(fader_disp)
 maingroup.append(faders_disp)
 
-wheelX_disp = WheelDisplay(70,25, 15)
-wheelY_disp = WheelDisplay(105,25, 15)
+wheelX_disp = WheelDisplay(70,25, 15, knob_w=9)
+wheelY_disp = WheelDisplay(105,25, 15, knob_w=9)
 maingroup.append(wheelX_disp)
 maingroup.append(wheelY_disp)
 
