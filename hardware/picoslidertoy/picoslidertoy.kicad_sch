@@ -3845,7 +3845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 156.21 181.61 0)
 			(effects
 				(font
@@ -4378,7 +4378,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 156.21 171.45 0)
 			(effects
 				(font
@@ -4711,7 +4711,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "MountingHole:MountingHole_2.7mm"
 			(at 156.21 176.53 0)
 			(effects
 				(font
@@ -4809,91 +4809,6 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:HS96L03W2C03")
-		(at 96.52 116.84 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e30600a-430c-4e5e-98cf-9f1dc964d3c2")
-		(property "Reference" "DISP1"
-			(at 101.6 118.1101 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "HS96L03W2C03"
-			(at 101.6 115.5701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "todbot_stuff:OLED-TH_under_L27.8-W27.2-P2.54_C9900033791"
-			(at 96.52 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 96.52 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C5248080"
-			(at 96.52 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "06bc2fc3-27f5-440e-98f5-c127823ad5c1")
-		)
-		(pin "2"
-			(uuid "d5b68483-8846-4e27-9aa3-a3fbb8ab488c")
-		)
-		(pin "4"
-			(uuid "259ed6c7-c4e5-4a9b-b8cc-c7f949db1b55")
-		)
-		(pin "1"
-			(uuid "e07ef00c-95e1-4205-97e1-c609d70a79fc")
-		)
-		(instances
-			(project "picoslidertoy"
-				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "DISP1")
 					(unit 1)
 				)
 			)
@@ -6208,7 +6123,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "MountingHole:MountingHole_2.5mm"
 			(at 156.21 186.69 0)
 			(effects
 				(font
@@ -8443,6 +8358,91 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:HS96L03W2C03")
+		(at 96.52 116.84 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5aca517-8a0f-40bd-ae35-c4edb749770e")
+		(property "Reference" "DISP2"
+			(at 101.6 118.1101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HS96L03W2C03"
+			(at 101.6 115.5701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "todbot_stuff:OLED-TH_under_fixed_L27.8-W27.2-P2.54_C9900033791"
+			(at 96.52 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C5248080"
+			(at 96.52 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "01aa4925-a66f-4ef5-acee-f32c07a8acf9")
+		)
+		(pin "2"
+			(uuid "12d13ae5-9274-439f-a4e7-55bc4333b546")
+		)
+		(pin "4"
+			(uuid "ec20db64-bdef-44df-a873-6089c2bd7762")
+		)
+		(pin "1"
+			(uuid "741a57d3-f296-484b-b499-076024031a13")
+		)
+		(instances
+			(project "picoslidertoy"
+				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
+					(reference "DISP2")
 					(unit 1)
 				)
 			)
