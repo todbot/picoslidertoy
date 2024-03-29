@@ -25,7 +25,7 @@ class TouchWheel():
         self.scale = sector_scale
         self.wrap_value = wrap_value
         self.last_pos = 0
-        self.pos_filt = 0.7
+        self.pos_filt = 0.1
 
     def pos(self):
         """

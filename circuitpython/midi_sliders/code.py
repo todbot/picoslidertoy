@@ -30,7 +30,7 @@ from touchslider import TouchWheel, TouchSlider
 from slider_display import FaderDisplay, WheelDisplay, PadsDisplay
 
 # midi cc and note definitions
-midi_ccs = [ 74, 1, 72, 74, 71 ]
+midi_ccs = [ 73, 1, 72, 74, 71 ]
 midi_notes = [ 34, 35, 36, 37,  38, 39, 40, 41,  24 ]  # FIXME
 midi_chan = 1
 
@@ -56,7 +56,7 @@ pads = [touchio.TouchIn(pin) for pin in pad_pins]
 
 # virtual on-screen displays of controls
 slider_displays = (
-    FaderDisplay(10 + 15*0, 10, 8, 35),  # fixme: need ".pos(pos-0.5)"
+    FaderDisplay(10 + 15*0, 10, 8, 35),
     FaderDisplay(10 + 15*1, 10, 8, 35),
     FaderDisplay(10 + 15*2, 10, 8, 35),
     WheelDisplay(70 + 0*35, 25, 15, knob_w=9, phase_offset=-0.25),
@@ -84,7 +84,7 @@ maingroup.append(pad_displays)
 pad_state = [False] * len(pads)
 
 while True:
-    for i,slider in enumerate(sliders):
+    for i, slider in enumerate(sliders):
         pos = slider.pos()
         if pos is not None:   # touched!
             slider_displays[i].pos(pos)   # fixme: need ".pos(pos-0.5)" for fader
@@ -105,5 +105,5 @@ while True:
             pad_state[i] = v
             print("pad:%d: note:" % i, msg)
 
-    time.sleep(0.01)
+    #time.sleep(0.01)
 
