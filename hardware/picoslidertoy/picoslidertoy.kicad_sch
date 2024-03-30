@@ -1055,88 +1055,6 @@
 				)
 			)
 		)
-		(symbol "MountingHole_1"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MountingHole_1_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
 		(symbol "SparkFun-Switch:Capacitive Button"
 			(pin_names
 				(offset 0) hide)
@@ -3817,71 +3735,6 @@
 		)
 	)
 	(symbol
-		(lib_name "MountingHole_1")
-		(lib_id "Mechanical:MountingHole")
-		(at 156.21 181.61 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a684cde-56f5-4dc9-97e7-51c4eabe6316")
-		(property "Reference" "H7"
-			(at 158.75 180.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 158.75 182.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 156.21 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 156.21 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "picoslidertoy"
-				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 207.01 137.16 90)
 		(unit 1)
@@ -4350,71 +4203,6 @@
 		)
 	)
 	(symbol
-		(lib_name "MountingHole_1")
-		(lib_id "Mechanical:MountingHole")
-		(at 156.21 171.45 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20502072-9e2f-4566-9326-3848440c0076")
-		(property "Reference" "H5"
-			(at 158.75 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 158.75 172.7199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 156.21 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 156.21 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "picoslidertoy"
-				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 132.08 66.04 270)
 		(unit 1)
@@ -4677,71 +4465,6 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "MountingHole_1")
-		(lib_id "Mechanical:MountingHole")
-		(at 156.21 176.53 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2cc2f81f-25f4-43d4-bc0b-4011bc21d14a")
-		(property "Reference" "H6"
-			(at 158.75 175.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 158.75 177.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm"
-			(at 156.21 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 156.21 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "picoslidertoy"
-				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -6089,71 +5812,6 @@
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
 					(reference "TOUCHROTARY2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "MountingHole_1")
-		(lib_id "Mechanical:MountingHole")
-		(at 156.21 186.69 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8e2d8fc5-2e9a-43a8-9286-06844de05d69")
-		(property "Reference" "H8"
-			(at 158.75 185.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 158.75 187.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.5mm"
-			(at 156.21 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 156.21 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 156.21 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "picoslidertoy"
-				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -8373,7 +8031,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5aca517-8a0f-40bd-ae35-c4edb749770e")
-		(property "Reference" "DISP2"
+		(property "Reference" "DISP1"
 			(at 101.6 118.1101 0)
 			(effects
 				(font
@@ -8442,7 +8100,7 @@
 		(instances
 			(project "picoslidertoy"
 				(path "/b1a19a0a-6a78-4edf-a179-1dffdce9f58b"
-					(reference "DISP2")
+					(reference "DISP1")
 					(unit 1)
 				)
 			)
