@@ -11906,14 +11906,15 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "picoslidertoy\ngithub.com/todbot/picoslidertoy\nU1: Raspberry Pi Pico\nDISP1: 1.09{dblquote} I2C OLED SSD1306\nR1-R23: 1M\nR25,R26: 10k"
+	(gr_text "picoslidertoy\ngithub.com/todbot/picoslidertoy\nU1: Raspberry Pi Pico\nDISP1: 1.09{dblquote} I2C OLED SSD1306\nR1-R23: 1M\nR25,R26: 10k\n28 Mar 2024"
 		(at 154.432 71.882 0)
 		(layer "B.SilkS")
 		(uuid "ea8a1e13-92e7-4018-b5e6-d94241e91716")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.1)
+				(thickness 0.2)
+				(bold yes)
 			)
 			(justify left bottom mirror)
 		)
