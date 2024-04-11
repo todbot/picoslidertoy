@@ -33,6 +33,12 @@ from slider_display import FaderDisplay, WheelDisplay, PadsDisplay
 midi_ccs = [ 73, 1, 72, 74, 71 ]
 midi_notes = [ 34, 35, 36, 37,  38, 39, 40, 41,  24 ]  # FIXME
 midi_chan = 1
+base_note = 36
+scale_mixolydian   = (0, 2, 4, 5, 7, 9, 10, 12, 14, 16)
+scale_minor        = (0, 2, 3, 5, 7, 8, 10, 12, 14, 15)
+scale_major        = (0, 2, 4, 5, 7, 9, 11, 12, 14, 16)
+scale_fifths       = (0, 5, 7, 12, 17,19,24,29,31,36,41,43) 
+scale = scale_fifths
 
 # pin definitions
 faderA_pins = (board.GP4, board.GP0, board.GP28)
@@ -43,6 +49,7 @@ wheelY_pins = (board.GP10, board.GP11, board.GP12)
 pad_pins = (board.GP22, board.GP21, board.GP20, board.GP19,
             board.GP18, board.GP17, board.GP16, board.GP6, board.GP13)
 i2c_sda_pin, i2c_scl_pin = board.GP15, board.GP14
+
 
 # set up the touch controls
 sliders = (
@@ -99,7 +106,8 @@ while True:
         v = pad.value
         pad_displays.set(i, v)
         if pad_state[i] != v:
-            n = midi_notes[i]
+            #n = midi_notes[i]
+            n = base_note + scale[i]
             msg = NoteOn(n, 127) if v else NoteOff(n,0)
             midi.send(msg)
             pad_state[i] = v
