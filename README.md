@@ -2,7 +2,6 @@
 
 
 <img src="./docs/picoslidertoy_photo1.jpg" width="400"><img src="./docs/picoslidertoy_photo2.jpg" width="400">
-<img src="./docs/picoslidertoy_render2.jpg" width="400">
 <a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>
 
 ### What is it?
@@ -62,3 +61,5 @@ I wanted a way to experiment with linear and rotary touch sliders.  I made some 
 The 25 capacitive touch sensors are read directly by the Pico, either via CircuitPython's `touchio` library or the `TouchyTouch` Arduino library.  No external touch chip needed.  I think that's really cool!  Getting an "analog" value out of the three touch sensors that make up a linear or rotary touch slider is fairly simple but there are some tricks I'm developing to make the values stable.
 
 picoslidertoy is also completely open source with schematic files in KiCad and software in CircuitPython and Arduino.
+
+<img src="./docs/picoslidertoy_render2.jpg" width="400">
