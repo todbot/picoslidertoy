@@ -6,7 +6,7 @@
 
 ### What is it?
 
-picoslidertoy is a control surface that uses 25 GPIO pins of the Raspberry Pi Pico to provide:
+picoslidertoy is a control surface that uses 24 GPIO pins of the Raspberry Pi Pico to provide:
 
 - three linear sliders
 - two rotary sliders
@@ -58,8 +58,14 @@ I wanted a way to experiment with linear and rotary touch sliders.  I made some 
 
 ### What makes it special?
 
-The 25 capacitive touch sensors are read directly by the Pico, either via CircuitPython's `touchio` library or the `TouchyTouch` Arduino library.  No external touch chip needed.  I think that's really cool!  Getting an "analog" value out of the three touch sensors that make up a linear or rotary touch slider is fairly simple but there are some tricks I'm developing to make the values stable.
+The 24 capacitive touch sensors are read directly by the Pico, either via CircuitPython's `touchio` library or the `TouchyTouch` Arduino library.  No external touch chip needed.  I think that's really cool!  Getting an "analog" value out of the three touch sensors that make up a linear or rotary touch slider is fairly simple but there are some tricks I'm developing to make the values stable.
 
 picoslidertoy is also completely open source with schematic files in KiCad and software in CircuitPython and Arduino.
+
+
+#### Press links
+
+- [Adafruit Show-N-Tell Live show 10 Apr 2024](https://www.youtube.com/live/9aliKuS8NTw?si=FC51cfeyoLF2YsNm&t=1055)
+- [Hackster.io 11 Apr 2024 article](https://www.hackster.io/news/tod-kurt-s-picoslidertoy-delivers-25-capacitive-touch-inputs-to-a-raspberry-pi-pico-with-sliders-368dca30f01c)
 
 <img src="./docs/picoslidertoy_render2.jpg" width="400">
