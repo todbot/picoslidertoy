@@ -1,10 +1,17 @@
 # picoslidertoy
 
-
+   * [What is it?](#what-is-it)
+   * [Variants](#variants)
+   * [Parts needed](#parts-needed)
+   * [Soldering components](#soldering-components)
+   * [Installing apps](#installing-apps)
+   * [Why?](#why)
+   
+   
 <img src="./docs/picoslidertoy_photo1.jpg" width="400"><img src="./docs/picoslidertoy_photo2.jpg" width="400">
 <a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>
 
-### What is it?
+## What is it?
 
 picoslidertoy is a control surface that uses 24 GPIO pins of the Raspberry Pi Pico to provide:
 
@@ -17,7 +24,7 @@ It also includes a cutout for a reverse-mounted SSD1306 I2C OLED display. The Ra
 
 The picoslidertoy can be a USB MIDI control surface, a USB Macropad keyboard with "analog" controls, or even a USB gamepad.  It can be programmed in [CircuitPython](https://circuitpython.org/) and [`touchio`](https://docs.circuitpython.org/en/latest/shared-bindings/touchio/index.html) (my preference) or Arduino with my [`TouchyTouch library`](https://github.com/todbot/TouchyTouch).  Several example firmware apps are provided.
 
-### Versions
+## Variants
 
 There are two versions of the picoslidertoy available:
 
@@ -28,7 +35,7 @@ There are two versions of the picoslidertoy available:
 There is also a nice minimal 3d-printable enclosure available in the github repo (and visible in the photos above).  You really want a case for capacitive touch projects like this to reduce spurious readings. 
 
 
-### Parts needed
+## Parts needed
 
 In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/), you will need:
 
@@ -45,7 +52,7 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 - (If you have a green proto one, you will also need 24 x 1M 0603 resistors and 2 x 10k 0603 resistors)
 
 
-### Soldering components
+## Soldering components
 
 - Pico 
 -- the Pico is soldered down surface-mount style, using its castellated pads. 
@@ -68,7 +75,7 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 
 
-### Installing apps
+## Installing apps
 
 ... More details coming soon! 
 
@@ -77,7 +84,7 @@ In general, I'll try to make UF2 files available in the [Releases section](https
 To install the apps, hold the Pico's BOOTSEL button down while plugging in the board to your computer. 
 This puts the board in bootloader mode.  Then drag the UF2 file to the "RPI-RP2" drive. 
 
-#### CircuitPython apps
+### CircuitPython apps
 
 - [hwtest](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/hwtest/code.py)
     -- a simple test of the touch sensors, no display needed. Use serial REPL to see results
@@ -87,7 +94,7 @@ This puts the board in bootloader mode.  Then drag the UF2 file to the "RPI-RP2"
 - [midi_sliders](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/midi_sliders/) -- MIDI controller where the sliders emit CCs and the buttons send NoteOn/NoteOffs
 
 
-### Why did you make it?
+## Why?
 
 I wanted a way to experiment with linear and rotary touch sliders.  I made some [touchwheels](https://github.com/todbot/touchwheels) to give away for Hackaday Supercon 2023 and they were popular. I wanted a larger playground for experimenting with these controls. 
 
@@ -98,7 +105,7 @@ The 24 capacitive touch sensors are read directly by the Pico, either via Circui
 picoslidertoy is also completely open source with schematic files in KiCad and software in CircuitPython and Arduino.
 
 
-#### Press links
+### Press links
 
 - [Adafruit Show-N-Tell Live show 10 Apr 2024](https://www.youtube.com/live/9aliKuS8NTw?si=FC51cfeyoLF2YsNm&t=1055)
 - [Hackster.io 11 Apr 2024 article](https://www.hackster.io/news/tod-kurt-s-picoslidertoy-delivers-25-capacitive-touch-inputs-to-a-raspberry-pi-pico-with-sliders-368dca30f01c)
