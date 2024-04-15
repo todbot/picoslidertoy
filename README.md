@@ -2,7 +2,7 @@
   
 <a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/">
 <img src="./docs/picoslidertoy_photo1.jpg" width="400"><img src="./docs/picoslidertoy_photo2.jpg" width="400"></a>
-<a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="100" height="55"></a>
+<a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="100" height="27"></a>
 
 ## Table of contents 
    * [What is it?](#what-is-it)
