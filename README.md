@@ -28,9 +28,41 @@ There are two versions of the picoslidertoy available:
 There is also a nice minimal 3d-printable enclosure available in the github repo (and visible in the photos above).  You really want a case for capacitive touch projects like this to reduce spurious readings. 
 
 
+### Parts needed
+
+In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/), you will need:
+
+- Raspberry Pi Pico 
+  - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC) 
+  - For USB-C, consider this [USB-C Pico clone](https://www.aliexpress.us/item/3256804731684211.html))
+  
+- 0.91" I2C OLED display 
+   - Pins in GND,VCC,SCL,SDA order 
+   - Should be 27.5([one example](https://amzn.to/3KDmy73))
+
+- (If you have a green proto one, you will also need 24 x 1M 0603 resistors and 2 x 10k 0603 resistors)
+
+
 ### Soldering components
 
-... Coming soon!   Very similar to [soldering the Pico on picotouch](https://github.com/todbot/picotouch?tab=readme-ov-file#how-to-solder-the-pico)
+- Pico -- the Pico is soldered down surface-mount style, using its castellated pads. 
+  [This video soldering a Pico on picotouch](https://github.com/todbot/picotouch?tab=readme-ov-file#how-to-solder-the-pico) is how I do it for this board too.  It's technically surface-mount soldering, 
+  but the pads are bigger than most through-hole pads and easy to solder to. 
+  Note that Pico clones that don't have castellated pads like the real Pico will
+  not work. 
+  
+- Display -- the OLED display can either be mounted on the front (especially easy if your display's pins
+  come pre-soldered) or from the back (my preference).  If mounting from the back, you first need to 
+  desolder the 4-pin header on the display and mount a new 4-pin header "reverse" so that pins stick up
+  from the front of the display. The main header body is still on the back of the display. 
+  (The video below hopefully makes this clearer).  When soldering, do one pin first and check alignment,
+  then solder the rest of the pins. Finish up by trimming the excess header pins. 
+
+
+- [Youtube video with picoslidertoy soldering tips](https://www.youtube.com/watch?v=zxt3xpre2Vg)
+
+  [<img src="https://i.ytimg.com/vi/zxt3xpre2Vg/maxresdefault.jpg" width="75%">](https://www.youtube.com/watch?v=zxt3xpre2Vg "picoslidertoy soldering tips")
+
 
 
 ### Installing apps
