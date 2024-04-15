@@ -33,8 +33,8 @@ There is also a nice minimal 3d-printable enclosure available in the github repo
 In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/), you will need:
 
 - Raspberry Pi Pico 
-  - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC) 
-  - For USB-C, consider this [USB-C Pico clone](https://www.aliexpress.us/item/3256804731684211.html)
+  - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC))
+  - For USB-C, consider this [USB-C 16 MB Pico clone](https://www.aliexpress.us/item/3256804731684211.html)
   
 - I2C OLED display 
    - 0.91" 128 x 64 pixels, in white
@@ -47,7 +47,8 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 ### Soldering components
 
-- Pico -- the Pico is soldered down surface-mount style, using its castellated pads. 
+- Pico 
+-- the Pico is soldered down surface-mount style, using its castellated pads. 
   [This video soldering a Pico on picotouch](https://github.com/todbot/picotouch?tab=readme-ov-file#how-to-solder-the-pico) is how I do it for this board too.  It's technically surface-mount soldering, 
   but the pads are bigger than most through-hole pads and easy to solder to. 
   Note that Pico clones that don't have castellated pads like the real Pico will
