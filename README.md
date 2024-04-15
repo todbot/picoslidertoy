@@ -1,19 +1,21 @@
 # picoslidertoy
+  
+<a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/">
+<img src="./docs/picoslidertoy_photo1.jpg" width="400"><img src="./docs/picoslidertoy_photo2.jpg" width="400"></a>
+<a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="100" height="55"></a>
 
+## Table of contents 
    * [What is it?](#what-is-it)
    * [Variants](#variants)
    * [Parts needed](#parts-needed)
    * [Soldering components](#soldering-components)
    * [Installing apps](#installing-apps)
    * [Why?](#why)
-   
-   
-<img src="./docs/picoslidertoy_photo1.jpg" width="400"><img src="./docs/picoslidertoy_photo2.jpg" width="400">
-<a href="https://www.tindie.com/products/todbot/picoslidertoy-capsense-controller-for-pico/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>
+
 
 ## What is it?
-
-picoslidertoy is a control surface that uses 24 GPIO pins of the Raspberry Pi Pico to provide:
+[picoslidertoy](https://github.com/todbot/picoslidertoy) is a touch-sensitive 
+control surface that uses 24 GPIO pins of the Raspberry Pi Pico to provide:
 
 - three linear sliders
 - two rotary sliders
@@ -22,8 +24,9 @@ picoslidertoy is a control surface that uses 24 GPIO pins of the Raspberry Pi Pi
 
 It also includes a cutout for a reverse-mounted SSD1306 I2C OLED display. The Raspberry Pi Pico SMD mounts to the back of the board to provide a clean look for the touch surface.  The entire PCB is 165 mm x 76 mm (6.5" x 3.0").
 
-The picoslidertoy can be a USB MIDI control surface, a USB Macropad keyboard with "analog" controls, or even a USB gamepad.  It can be programmed in [CircuitPython](https://circuitpython.org/) and [`touchio`](https://docs.circuitpython.org/en/latest/shared-bindings/touchio/index.html) (my preference) or Arduino with my [`TouchyTouch library`](https://github.com/todbot/TouchyTouch).  Several example firmware apps are provided.
-
+The picoslidertoy can be a USB MIDI control surface, a USB Macropad keyboard with "analog" controls, or even a USB gamepad.  It can be programmed in [CircuitPython](https://circuitpython.org/) and [`touchio`](https://docs.circuitpython.org/en/latest/shared-bindings/touchio/index.html) or Arduino with my [`TouchyTouch library`](https://github.com/todbot/TouchyTouch).  Several example firmware apps are provided.
+   
+   
 ## Variants
 
 There are two versions of the picoslidertoy available:
