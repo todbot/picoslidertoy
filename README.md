@@ -34,11 +34,13 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 - Raspberry Pi Pico 
   - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC) 
-  - For USB-C, consider this [USB-C Pico clone](https://www.aliexpress.us/item/3256804731684211.html))
+  - For USB-C, consider this [USB-C Pico clone](https://www.aliexpress.us/item/3256804731684211.html)
   
-- 0.91" I2C OLED display 
-   - Pins in GND,VCC,SCL,SDA order 
-   - Should be 27.5([one example](https://amzn.to/3KDmy73))
+- I2C OLED display 
+   - 0.91" 128 x 64 pixels, in white
+   - Pins must be in GND,VCC,SCL,SDA order 
+   - Prefer the 27.5 mm wide displays over the 25 mm wide ones ([one example](https://amzn.to/3KDmy73))
+
 
 - (If you have a green proto one, you will also need 24 x 1M 0603 resistors and 2 x 10k 0603 resistors)
 
