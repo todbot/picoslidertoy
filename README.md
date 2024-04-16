@@ -31,9 +31,9 @@ The picoslidertoy can be a USB MIDI control surface, a USB Macropad keyboard wit
 
 There are two versions of the picoslidertoy available:
 
-- black PCB – production version with proper alignment of the cutout for standard 0.91" I2C OLED, comes with all SMD resistors soldered down
+- black PCB -- production version with proper alignment of the cutout for standard 0.96" I2C OLED, comes with all SMD resistors soldered down  Note: the silkscreen on the back has a typo, saying `0.91" I2C OLED`. 
 
-- green PCB - prototype version with no components soldered down and where the I2C OLED cutout is a little off. Still usable, or mount the display on the face. 
+- green PCB -- prototype version with no components soldered down and where the I2C OLED display cutout is a little off. Still usable, or mount the display on the face. 
 
 There is also a nice minimal 3d-printable enclosure available in the github repo (and visible in the photos above).  You really want a case for capacitive touch projects like this to reduce spurious readings. 
 
@@ -46,8 +46,8 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
   - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC))
   - For USB-C, consider this [USB-C 16 MB Pico clone](https://www.aliexpress.us/item/3256804731684211.html)
   
-- I2C OLED display 
-   - 0.91" 128 x 64 pixels, in white
+- I2C OLED display SSD1306 
+   - 0.96" 128 x 64 pixels, in white
    - Pins must be in GND,VCC,SCL,SDA order 
    - Prefer the 27.5 mm wide displays over the 25 mm wide ones ([one example](https://amzn.to/3KDmy73))
 
