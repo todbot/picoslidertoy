@@ -57,44 +57,83 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 ## Soldering components
 
-- Pico 
--- the Pico is soldered down surface-mount style, using its castellated pads. 
+- **Pico**  -- the Pico is soldered down surface-mount style, using its castellated pads. 
   [This video soldering a Pico on picotouch](https://github.com/todbot/picotouch?tab=readme-ov-file#how-to-solder-the-pico) is how I do it for this board too.  It's technically surface-mount soldering, 
   but the pads are bigger than most through-hole pads and easy to solder to. 
   Note that Pico clones that don't have castellated pads like the real Pico will
   not work. 
+  ([Youtube video with Pico SMD soldering tips](https://www.youtube.com/watch?v=dW9LiOq3Dso "Pico SMD soldering"))
+  [<img src="https://i.ytimg.com/vi/dW9LiOq3Dso/maxresdefault.jpg" width="75%">](https://www.youtube.com/watch?v=dW9LiOq3Dso "Pico SMD soldering")
   
-- Display -- the OLED display can either be mounted on the front (especially easy if your display's pins
+- **OLED Display** -- the display can either be mounted on the front (especially easy if your display's pins
   come pre-soldered) or from the back (my preference).  If mounting from the back, you first need to 
   desolder the 4-pin header on the display and mount a new 4-pin header "reverse" so that pins stick up
   from the front of the display. The main header body is still on the back of the display. 
   (The video below hopefully makes this clearer).  When soldering, do one pin first and check alignment,
   then solder the rest of the pins. Finish up by trimming the excess header pins. 
-
-
-- [Youtube video with picoslidertoy soldering tips](https://www.youtube.com/watch?v=zxt3xpre2Vg)
-
+  ([Youtube video with picoslidertoy soldering tips](https://www.youtube.com/watch?v=zxt3xpre2Vg))
   [<img src="https://i.ytimg.com/vi/zxt3xpre2Vg/maxresdefault.jpg" width="75%">](https://www.youtube.com/watch?v=zxt3xpre2Vg "picoslidertoy soldering tips")
 
 
 
-## Installing apps
-
-... More details coming soon! 
-
-In general, I'll try to make UF2 files available in the [Releases section](https://github.com/todbot/picoslidertoy/releases) for the differenet apps.   
-
-To install the apps, hold the Pico's BOOTSEL button down while plugging in the board to your computer. 
-This puts the board in bootloader mode.  Then drag the UF2 file to the "RPI-RP2" drive. 
+## Firmware installation / Installing apps
 
 ### CircuitPython apps
 
+These are the apps currently available 
 - [hwtest](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/hwtest/code.py)
     -- a simple test of the touch sensors, no display needed. Use serial REPL to see results
 
 - [hwtest display](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/hwtest_display/code.py) -- like `hwtest` but also outputs simple feedback via the display
  
 - [midi_sliders](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/midi_sliders/) -- MIDI controller where the sliders emit CCs and the buttons send NoteOn/NoteOffs
+
+
+If you've never used a Pico or CircuitPython, there are several ways to put code on it. 
+The two main ways I'll present here are:
+
+- Ready-to-go UF2 file in "Releases" 
+- Installing by hand:  CircuitPython, code.py, libraries 
+
+### Ready-to-go UF2 file
+
+Steps to install a UF2 file:
+
+- Download a ready-to-go UF2 file from the [Releases section](https://github.com/todbot/picoslidertoy/releases) section
+- Hold the BOOTSEL button on the picoslidertoy's Pico while plugging it into your computer
+- Copy the UF2 file to the "RPI-RP2" Pico bootloader drive 
+- Wait for a bit, then app is running!
+
+In general, I'll try to make UF2 files available in the [Releases section](https://github.com/todbot/picoslidertoy/releases) for the differnt apps.
+
+### Installing by hand 
+
+Steps to install by hand: 
+
+- Download this repo, either with a `git clone` or clicking on "Code / Download ZIP"
+- Download the latest CircuitPython UF2 for Pico at https://circuitpython.org/board/raspberry_pi_pico/
+- Install the CircuitPython UF2 (like in the above UF2 steps)
+- Wait for CircuitPython to come up and present a CIRCUITPY drive
+- Copy the files of the picoslidertoy app in question to CIRCUITPY:
+
+  e.g. for `midi_sliders`, copy `code.py`, `slider_display.py`, `touchslider.py` to CIRCUITPY
+  ```
+  cp circuitpython/midi_sliders/* /Volumes/CIRCUITPY  # (if macos)
+  ```
+
+   
+- Install CircuitPython libraries onto Pico
+
+    If you have Python on your computer you can do:
+    ```
+    pip3 install circup
+    circup install adafruit_midi adafruit_debouncer 
+    ```
+    Otherwise, download the [CircuitPython Libraries Bundle](https://circuitpython.org/libraries)
+    and copy over the `adafruit_midi`, `adafruit_debouncer`, & `adafruit_ticks` libraries
+    to the `CIRCUITPY/lib` folder on the Pico.
+    
+
 
 
 ## Why?

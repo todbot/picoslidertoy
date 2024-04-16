@@ -2626,6 +2626,50 @@
 			(uuid "61df93fb-b391-4b57-a2e4-eeda22d6bebd")
 		)
 		(fp_circle
+			(center -11.65 0.56)
+			(end -10.45 0.56)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "Edge.Cuts")
+			(uuid "6e54ea43-5713-4315-a2bc-88b83ba14761")
+		)
+		(fp_circle
+			(center -11.65 24.36)
+			(end -10.45 24.36)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "Edge.Cuts")
+			(uuid "47ebd6e2-bf58-4968-9864-0cc2af3aa8cb")
+		)
+		(fp_circle
+			(center 11.65 0.56)
+			(end 12.85 0.56)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "Edge.Cuts")
+			(uuid "107b3d8e-3eb2-44f9-b3b9-b4e0d50559f9")
+		)
+		(fp_circle
+			(center 11.65 24.36)
+			(end 12.85 24.36)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "Edge.Cuts")
+			(uuid "35d8d1ad-389e-474f-919f-4440d4260bc6")
+		)
+		(fp_circle
 			(center -13.6 25.6)
 			(end -13.57 25.6)
 			(stroke
@@ -11862,7 +11906,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "picoslidertoy\ngithub.com/todbot/picoslidertoy\nU1: Raspberry Pi Pico\nDISP1: 0.96{dblquote} I2C OLED SSD1306\nR1-R24: 1M\nR25,R26: 10k\n24 Apr 2024 - (no display mounting holes)"
+	(gr_text "picoslidertoy\ngithub.com/todbot/picoslidertoy\nU1: Raspberry Pi Pico\nDISP1: 1.09{dblquote} I2C OLED SSD1306\nR1-R23: 1M\nR25,R26: 10k\n28 Mar 2024"
 		(at 154.432 71.882 0)
 		(layer "B.SilkS")
 		(uuid "ea8a1e13-92e7-4018-b5e6-d94241e91716")
