@@ -55,6 +55,8 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 - (If you have a green proto one, you will also need 24 x 1M 0603 resistors and 2 x 10k 0603 resistors)
 
+- [3d printed case](./enclosure/picoslidertoy_case.stl) or M2.5 standoffs/screws or some other feet
+
 
 ## Soldering components
 
@@ -83,7 +85,7 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 
 These are the apps currently available 
 - [hwtest](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/hwtest/code.py)
-    -- a simple test of the touch sensors, no display needed. Use serial REPL to see results
+    -- a simple on/off test of the touch sensors, no display needed. Use serial REPL to see results
 
 - [hwtest display](https://github.com/todbot/picoslidertoy/blob/main/circuitpython/hwtest_display/code.py) -- like `hwtest` but also outputs simple feedback via the display
  
@@ -105,7 +107,7 @@ Steps to install a UF2 file:
 - Copy the UF2 file to the "RPI-RP2" Pico bootloader drive 
 - Wait for a bit, then app is running!
 
-In general, I'll try to make UF2 files available in the [Releases section](https://github.com/todbot/picoslidertoy/releases) for the differnt apps.
+In general, I'll try to make UF2 files available in the [Releases section](https://github.com/todbot/picoslidertoy/releases) for the different apps.
 
 ### Installing by hand 
 
@@ -121,7 +123,6 @@ Steps to install by hand:
   ```
   cp circuitpython/midi_sliders/* /Volumes/CIRCUITPY  # (if macos)
   ```
-
    
 - Install CircuitPython libraries onto Pico
 
