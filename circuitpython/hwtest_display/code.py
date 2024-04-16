@@ -106,7 +106,7 @@ for g in (fader_partsA, fader_partsB, fader_partsC, wheel_partsX, wheel_partsY, 
 
 
 print("\n----------")
-print("picoslidertoy hwtest2 hello")
+print("picoslidertoy hwtest_display hello")
 
 while True:
     for i, touch in enumerate(touchins['faderA']):
