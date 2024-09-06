@@ -46,7 +46,8 @@ In addition to the [picoslidertoy PCB](https://www.tindie.com/products/todbot/pi
 - Raspberry Pi Pico 
   - Must be w/ castellated pads & w/o headers,  ([like this](https://amzn.to/4d0KFZC))
   - For USB-C, consider this [USB-C 16 MB Pico clone](https://www.aliexpress.us/item/3256804731684211.html)
-  
+  - **(NOTE: NOT the Pico2, since its RP2350 chip has a hardware error)**
+
 - I2C OLED display SSD1306 
    - 0.96" 128 x 64 pixels, in white
    - Pins must be in GND,VCC,SCL,SDA order 
