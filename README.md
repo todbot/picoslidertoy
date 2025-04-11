@@ -130,11 +130,11 @@ Steps to install by hand:
     If you have Python on your computer you can do:
     ```
     pip3 install circup
-    circup install adafruit_midi adafruit_displayio_ssd1306
+    circup install adafruit_midi adafruit_displayio_ssd1306 adafruit_hid adafruit_display_text
     ```
     Otherwise, download the [CircuitPython Libraries Bundle](https://circuitpython.org/libraries)
-    and copy over the `adafruit_midi` and `adafruit_displayio_ssd1306` libraries
-    to the `CIRCUITPY/lib` folder on the Pico.
+    and copy over the `adafruit_midi`, `adafruit_displayio_ssd1306`, `adafruit_hid` and
+    `adafruit_display_text` libraries to the `CIRCUITPY/lib` folder on the Pico.
 
 
 

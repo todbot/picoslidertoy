@@ -18,10 +18,11 @@ Originally part of the 'touchwheels' project: https://github.com/todbot/touchwhe
 import math
 import displayio
 import vectorio
+from adafruit_display_emoji_text import EmojiLabel
 
 class FaderDisplay(displayio.Group):
     """Display a simple virtual fader with virtual 'knob' indicating position """
-    def __init__(self, x,y, w,h, knob_w=10):
+    def __init__(self, x,y, w,h, knob_w=11):
         super().__init__(x=x,y=y,scale=1)
         self.w, self.h, self.knob_w = w,h, knob_w
         pW = displayio.Palette(1)
@@ -35,6 +36,8 @@ class FaderDisplay(displayio.Group):
         self.knob.append(knob_touch)
         self.knob.y = h//2
         self.append(self.knob)
+        self.knob_emoji = None
+
     def pos(self,v):
         """Set position of virtual fader"""
         self.knob.y = int(v * (self.h-self.knob_w/2))
@@ -42,6 +45,17 @@ class FaderDisplay(displayio.Group):
         """Set to indicate if fader is being curerently touched"""
         self.knob[1].hidden = v
 
+    def emoji(self,v):
+        if self.knob_emoji:
+            self.knob.remove(self.knob_emoji)
+            del self.knob_emoji
+        if not v:
+            self.knob_emoji = None
+        else:
+            self.knob_emoji = EmojiLabel(v, scale=1)
+            self.knob_emoji.anchor_point = (0.5, 0.5)
+            self.knob_emoji.anchored_position = (self.knob_w/2, 2)
+            self.knob.append(self.knob_emoji)
 
 class WheelDisplay(displayio.Group):
     """Simple round display with 'knob' indicating wheel position"""
@@ -62,6 +76,7 @@ class WheelDisplay(displayio.Group):
         self.knob.append(knob_handle)
         self.knob.append(knob_touch)
         self.append(self.knob)
+        self.emoji_label = None
         self.pos(0)
         
     def pos(self,v):
@@ -71,6 +86,18 @@ class WheelDisplay(displayio.Group):
         
     def touch(self,v):
         self.knob[1].hidden = v
+
+    def emoji(self,v):
+        if self.emoji_label:
+            self.remove(self.emoji_label)
+            del self.emoji_label
+        if not v:
+            self.emoji_label = None
+        else:
+            self.emoji_label = EmojiLabel(v, scale=1)
+            self.emoji_label.anchor_point = (0.5, 0.5)
+            self.emoji_label.anchored_position = (0, -2)
+            self.append(self.emoji_label)
 
 class PadsDisplay(displayio.Group):
     """Simple list of on/off boxes representing touch pads"""
