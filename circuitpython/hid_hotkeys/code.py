@@ -10,7 +10,7 @@
 # To use:
 #
 # 1. Install needed libraries:
-#   circup install adafruit_displayio_ssd1306 adafruit_hid adafruit_display_text
+#   circup install adafruit_displayio_ssd1306 adafruit_hid
 # 2. Copy over files in this directory to CIRCUITPY:
 #   cp circuitpython/hid_hotkeys/* /Volumes/CIRCUITPY/
 #

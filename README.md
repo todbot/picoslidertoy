@@ -6,12 +6,19 @@
 
 ## Table of contents 
 
-   * [What is it?](#what-is-it)
-   * [Variants](#variants)
-   * [Parts needed](#parts-needed)
-   * [Soldering components](#soldering-components)
-   * [Firmware installation / Installing apps](#firmware-installation--installing-apps)
-   * [Why?](#why)
+- [picoslidertoy](#picoslidertoy)
+  - [Table of contents](#table-of-contents)
+  - [What is it?](#what-is-it)
+  - [Variants](#variants)
+  - [Parts needed](#parts-needed)
+  - [Soldering components](#soldering-components)
+  - [Firmware installation / Installing apps](#firmware-installation--installing-apps)
+    - [CircuitPython apps](#circuitpython-apps)
+    - [Ready-to-go UF2 file](#ready-to-go-uf2-file)
+    - [Installing by hand](#installing-by-hand)
+  - [Why?](#why)
+    - [What makes it special?](#what-makes-it-special)
+    - [Press links](#press-links)
 
 
 ## What is it?
@@ -130,11 +137,11 @@ Steps to install by hand:
     If you have Python on your computer you can do:
     ```
     pip3 install circup
-    circup install adafruit_midi adafruit_displayio_ssd1306 adafruit_hid adafruit_display_text
+    circup install adafruit_midi adafruit_displayio_ssd1306 adafruit_hid
     ```
     Otherwise, download the [CircuitPython Libraries Bundle](https://circuitpython.org/libraries)
-    and copy over the `adafruit_midi`, `adafruit_displayio_ssd1306`, `adafruit_hid` and
-    `adafruit_display_text` libraries to the `CIRCUITPY/lib` folder on the Pico.
+    and copy over the `adafruit_midi`, `adafruit_displayio_ssd1306` and `adafruit_hid` libraries to
+    the `CIRCUITPY/lib` folder on the Pico.
 
 
 
