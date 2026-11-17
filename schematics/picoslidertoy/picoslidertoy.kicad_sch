@@ -1675,7 +1675,7 @@
 				)
 			)
 		)
-		(symbol "todbot_eagle2023:TouchSlider3"
+		(symbol "todbot_eagle2023:TouchSlider-3sectors"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1698,7 +1698,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "touchslider_export:TODSTUFF2023_TOUCHSLIDER3_5X18"
+			(property "Footprint" "todbot_eagle2023:TOUCHSLIDER3_8x40B"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1725,7 +1725,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TouchSlider3_1_0"
+			(symbol "TouchSlider-3sectors_1_0"
 				(polyline
 					(pts
 						(xy -5.08 -10.16) (xy 2.54 -10.16)
@@ -3595,7 +3595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "todbot_eagle2023:TouchSlider3")
+		(lib_id "todbot_eagle2023:TouchSlider-3sectors")
 		(at 234.95 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4672,7 +4672,7 @@
 		)
 	)
 	(symbol
-		(lib_id "todbot_eagle2023:TouchSlider3")
+		(lib_id "todbot_eagle2023:TouchSlider-3sectors")
 		(at 234.95 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7547,7 +7547,7 @@
 		)
 	)
 	(symbol
-		(lib_id "todbot_eagle2023:TouchSlider3")
+		(lib_id "todbot_eagle2023:TouchSlider-3sectors")
 		(at 234.95 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
